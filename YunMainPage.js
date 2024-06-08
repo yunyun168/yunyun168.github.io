@@ -135,12 +135,12 @@ if (reversed == null) { reversed = false; }
 	// 圖
 	this.instance = new lib.icon_152();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,152,152);
+p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,167.2);
 
 
 (lib.按鈕3巴曲花波a = function(mode,startPosition,loop,reversed) {
@@ -176,12 +176,12 @@ if (reversed == null) { reversed = false; }
 	// 圖
 	this.instance = new lib.icon_152();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,152,152);
+p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,167.2);
 
 
 (lib.按鈕2字庫編輯器w = function(mode,startPosition,loop,reversed) {
@@ -225,12 +225,12 @@ if (reversed == null) { reversed = false; }
 	// 圖
 	this.instance = new lib.icon_152();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,152,152);
+p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,167.2);
 
 
 (lib.按鈕1易經姓名學a = function(mode,startPosition,loop,reversed) {
@@ -290,12 +290,12 @@ if (reversed == null) { reversed = false; }
 	// 圖
 	this.instance = new lib.icon_152();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,152,152);
+p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,167.2);
 
 
 (lib.按鈕0易經姓名學w = function(mode,startPosition,loop,reversed) {
@@ -355,12 +355,12 @@ if (reversed == null) { reversed = false; }
 	// 圖
 	this.instance = new lib.icon_152();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,152,152);
+p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,167.2);
 
 
 // stage content:
@@ -482,27 +482,27 @@ if (reversed == null) { reversed = false; }
 	// 按鈕
 	this.Fun2_btn = new lib.按鈕2字庫編輯器w();
 	this.Fun2_btn.name = "Fun2_btn";
-	this.Fun2_btn.setTransform(807.8,800.75);
+	this.Fun2_btn.setTransform(771.35,838.75);
 	new cjs.ButtonHelper(this.Fun2_btn, 0, 1, 2);
 
 	this.Fun3_btn = new lib.按鈕4巴曲花波w();
 	this.Fun3_btn.name = "Fun3_btn";
-	this.Fun3_btn.setTransform(1012.8,796.75);
+	this.Fun3_btn.setTransform(1018.8,834.75);
 	new cjs.ButtonHelper(this.Fun3_btn, 0, 1, 2);
 
 	this.Fun1_btn = new lib.按鈕1易經姓名學a();
 	this.Fun1_btn.name = "Fun1_btn";
-	this.Fun1_btn.setTransform(236.9,800.75);
+	this.Fun1_btn.setTransform(276.45,838.75);
 	new cjs.ButtonHelper(this.Fun1_btn, 0, 1, 2);
 
 	this.Fun4_btn = new lib.按鈕3巴曲花波a();
 	this.Fun4_btn.name = "Fun4_btn";
-	this.Fun4_btn.setTransform(1012.8,996);
+	this.Fun4_btn.setTransform(523.9,1028.75);
 	new cjs.ButtonHelper(this.Fun4_btn, 0, 1, 2);
 
 	this.Fun0_btn = new lib.按鈕0易經姓名學w();
 	this.Fun0_btn.name = "Fun0_btn";
-	this.Fun0_btn.setTransform(23,800.75);
+	this.Fun0_btn.setTransform(29,838.75);
 	new cjs.ButtonHelper(this.Fun0_btn, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun4_btn},{t:this.Fun1_btn},{t:this.Fun3_btn},{t:this.Fun2_btn}]}).wait(1));
@@ -626,7 +626,7 @@ lib.properties = {
 	color: "#FFFFCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1717865026056", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1717866391739", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
