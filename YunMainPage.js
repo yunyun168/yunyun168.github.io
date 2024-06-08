@@ -387,7 +387,7 @@ if (reversed == null) { reversed = false; }
 		}
 		var g_mcThisUI = this;
 		
-		var g_iFunBtnMax = 4;
+		var g_iFunBtnMax = 5;
 		
 		var g_sToolsPath = "";
 		
@@ -626,7 +626,7 @@ lib.properties = {
 	color: "#FFFFCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1717863683587", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1717865026056", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
