@@ -1,25 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<title>芸雀工房</title>
-<link href="css/main.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-body {
-    background-image: url();
-    background-repeat: repeat;
-    font-size: 18px;
-}
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>YunMainPage</title>
+<!-- write your code here -->
+<style>
+  #animation_container, #_preload_div_ {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+  }
 </style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="YunMainPage.js?1717863683618"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("FBB73EEB2896D94A9333B71285A95BF6");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	var preloaderDiv = document.getElementById("_preload_div_");
+	preloaderDiv.style.display = 'none';
+	canvas.style.display = 'block';
+	exportRoot = new lib.YunMainPage();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(true,'both',true,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
 </head>
-<body>
-<div id="content">
-  <div id="side2">
-    <td width="0" align="left" valign="top" bgcolor="#FFFFFF" class="style2" >
-          <h1 style="text-align: center;">【芸雀工房】</h1>
-          <p style="text-align: center; font-size: 24px;">信箱 : yunyunservice168@gmail.com </p>
-		  <p style="text-align: center; font-size: 24px;">產品 : <a href="https://play.google.com/store/apps/details?id=air.tw.com.maxddd23.luckynameenergy">易術姓名學之貴人神器</a></p>
-          <p style="text-align: center; font-size: 24px;">LINE貼圖 : <a href="https://store.line.me/stickershop/author/4773774/zh-Hant">芸雀小舖</a></p>
-          <p style="text-align: center; font-size: 24px;">YouTube : <a href="https://m.youtube.com/channel/UCPumEerBsGyqmZ-JLH2475Q">知視命理館</a></p>
-</div>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 204, 1.00); width:1200px; height:1200px">
+		<canvas id="canvas" width="1200" height="1200" style="position: absolute; display: none; background-color:rgba(255, 255, 204, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1200px; height:1200px; position: absolute; left: 0px; top: 0px; display: none;">
+		</div>
+	</div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1200px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1717863683618 style='vertical-align: middle; max-height: 100%'/></div>
+</body>
+</html>
