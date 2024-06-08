@@ -26,6 +26,7 @@
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
+	canvas.getContext('2d', { willReadFrequently: true });
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
 	var comp=AdobeAn.getComposition("FBB73EEB2896D94A9333B71285A95BF6");
@@ -69,7 +70,7 @@ function handleComplete(evt,comp) {
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
+<body onload="init();" style="margin:0px;background-color:rgba(255, 255, 204, 1.00)">
 	<div id="animation_container" style="background-color:rgba(255, 255, 204, 1.00); width:1200px; height:1200px">
 		<canvas id="canvas" width="1200" height="1200" style="position: absolute; display: none; background-color:rgba(255, 255, 204, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1200px; height:1200px; position: absolute; left: 0px; top: 0px; display: none;">
