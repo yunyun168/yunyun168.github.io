@@ -643,7 +643,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1717947722733", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1717948019977", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
