@@ -30,6 +30,7 @@ function init() {
 	dom_overlay_container = document.getElementById("dom_overlay_container");
 	var comp=AdobeAn.getComposition("FBB73EEB2896D94A9333B71285A95BF6");
 	var lib=comp.getLibrary();
+	createjs.MotionGuidePlugin.install();
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
