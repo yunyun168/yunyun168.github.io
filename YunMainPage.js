@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[0,1798,657,138],[1026,514,134,130],[1026,646,134,130],[1202,1302,564,168],[1202,1472,564,168],[1540,274,152,152],[1716,829,217,139],[1598,1128,193,154],[0,0,1024,1024],[0,1628,564,168],[566,1628,564,168],[1026,0,512,512],[1132,1642,564,168],[1202,514,512,512],[1540,0,394,272],[1202,1028,394,272],[1598,1028,336,98],[659,1812,480,120],[1716,274,297,297],[1716,573,297,254]]}
+		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[0,1798,657,138],[1540,274,152,152],[1026,668,134,130],[1026,800,134,130],[1202,1302,564,168],[1202,1472,564,168],[1026,514,152,152],[1716,829,217,139],[1598,1128,193,154],[0,0,1024,1024],[0,1628,564,168],[566,1628,564,168],[1026,0,512,512],[1132,1642,564,168],[1202,514,512,512],[1540,0,394,272],[1202,1028,394,272],[1598,1028,336,98],[659,1812,480,120],[1716,274,297,297],[1716,573,297,254]]}
 ];
 
 
@@ -41,135 +41,142 @@ lib.ssMetadata = [
 
 
 
-(lib.Buff天地 = function() {
+(lib.APKicon_152 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Buff太極 = function() {
+(lib.Buff天地 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.DownloadAPK = function() {
+(lib.Buff太極 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.GooglePlay = function() {
+(lib.DownloadAPK = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.icon_152 = function() {
+(lib.GooglePlay = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.彩鑽LR = function() {
+(lib.icon_152 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.彩心 = function() {
+(lib.彩鑽LR = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LINEICON = function() {
+(lib.彩心 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LINE貼圖 = function() {
+(lib.LINEICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們 = function() {
+(lib.LINE貼圖 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們ICON = function() {
+(lib.聯絡我們 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.YouTube = function() {
+(lib.聯絡我們ICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.YouTubeICON = function() {
+(lib.YouTube = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.喜鵲 = function() {
+(lib.YouTubeICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.寶盒 = function() {
+(lib.喜鵲 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.寶盒呼吸光 = function() {
+(lib.寶盒 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.文字底 = function() {
+(lib.寶盒呼吸光 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.文鳥小麥 = function() {
+(lib.文字底 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.鳥3 = function() {
+(lib.文鳥小麥 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.鳥3 = function() {
+	this.initialize(ss["YunMainPage_atlas_P_1"]);
+	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -355,7 +362,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// 圖
-	this.instance = new lib.icon_152();
+	this.instance = new lib.APKicon_152();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
 
@@ -594,7 +601,7 @@ if (reversed == null) { reversed = false; }
 
 	this.Fun3_btn = new lib.按鈕4巴曲花波w();
 	this.Fun3_btn.name = "Fun3_btn";
-	this.Fun3_btn.setTransform(1012.8,674.7);
+	this.Fun3_btn.setTransform(1012.8,678.7);
 	new cjs.ButtonHelper(this.Fun3_btn, 0, 1, 2);
 
 	this.Fun1_btn = new lib.按鈕1易經姓名學a();
@@ -749,7 +756,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1717995171185", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1718011055194", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
