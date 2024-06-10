@@ -452,7 +452,7 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(79.05,154.4,0.5,0.5,0,0,0,79.5,79.8);
 	this.instance.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:1,scaleY:1,guide:{path:[79,154.3,78,149.4,76.2,143.2,70.3,122.6,59.9,104.5,26.6,46.6,-38.9,34.1]},alpha:1},19).wait(30).to({alpha:0},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:79.9,scaleX:0.6842,scaleY:0.6842,guide:{path:[79.1,154.3,78.1,149.4,76.2,143.2,70.3,122.6,59.9,104.5,56.8,99.1,53.4,94]}},7).to({regY:79.8,scaleX:1,scaleY:1,guide:{path:[53.4,94.1,20.5,45.5,-38.9,34.2]},alpha:1},12).wait(30).to({alpha:0},10).wait(1));
 
 	this._renderFirstFrame();
 
@@ -476,7 +476,7 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(2.55,239.35,0.5,0.5,0,0,0,79.5,79.8);
 	this.instance.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:79.7,scaleX:1,scaleY:1,guide:{path:[0,239.4,0,234.2,0.6,226.7,2.2,207.4,8.2,188,27.1,125.8,81.9,85.3]},alpha:1},19).wait(30).to({alpha:0},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:79.9,scaleX:0.7105,scaleY:0.7105,guide:{path:[0,239.4,-0.1,234.2,0.5,226.7,2.2,207.4,8.1,188,11.6,176.4,16.4,165.5]}},8).to({regY:79.7,scaleX:1,scaleY:1,guide:{path:[16.5,165.6,37.4,118.3,81.9,85.2]},alpha:1},11).wait(30).to({alpha:0},10).wait(1));
 
 	this._renderFirstFrame();
 
@@ -698,7 +698,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1718024658435", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1718025056072", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
