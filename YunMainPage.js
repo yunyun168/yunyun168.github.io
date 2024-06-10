@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"YunMainPage_atlas_P_1", frames: [[2052,0,1200,600],[2052,772,657,138],[3348,906,134,130],[2052,912,134,130],[3254,274,564,168],[3254,444,564,168],[3492,784,152,152],[3820,274,217,139],[3820,415,193,154],[2052,602,564,168],[2618,602,564,168],[0,0,1024,1024],[3184,614,564,168],[1026,0,1024,1024],[3254,0,394,272],[3650,0,394,272],[3010,906,336,98],[3010,784,480,120],[3750,614,297,297],[2711,772,297,254]]}
+		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[0,1798,657,138],[1026,514,134,130],[1026,646,134,130],[1202,1302,564,168],[1202,1472,564,168],[1540,274,152,152],[1716,829,217,139],[1598,1128,193,154],[0,0,1024,1024],[0,1628,564,168],[566,1628,564,168],[1026,0,512,512],[1132,1642,564,168],[1202,514,512,512],[1540,0,394,272],[1202,1028,394,272],[1598,1028,336,98],[659,1812,480,120],[1716,274,297,297],[1716,573,297,254]]}
 ];
 
 
@@ -90,79 +90,86 @@ lib.ssMetadata = [
 
 
 
-(lib.LINE貼圖 = function() {
+(lib.LINEICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們 = function() {
+(lib.LINE貼圖 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們ICON = function() {
+(lib.聯絡我們 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.YouTube = function() {
+(lib.聯絡我們ICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.YouTubeICON = function() {
+(lib.YouTube = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.喜鵲 = function() {
+(lib.YouTubeICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.寶盒 = function() {
+(lib.喜鵲 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.寶盒呼吸光 = function() {
+(lib.寶盒 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.文字底 = function() {
+(lib.寶盒呼吸光 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.文鳥小麥 = function() {
+(lib.文字底 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.鳥3 = function() {
+(lib.文鳥小麥 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.鳥3 = function() {
+	this.initialize(ss["YunMainPage_atlas_P_1"]);
+	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -181,6 +188,28 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
+
+
+(lib.鑽石 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// 圖層_1
+	this.instance = new lib.彩鑽LR();
+	this.instance.setTransform(0,46.25,0.5493,0.5493,-22.84);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.鑽石, new cjs.Rectangle(0,0,139.5,116.6), null);
 
 
 (lib.呼吸光動畫 = function(mode,startPosition,loop,reversed) {
@@ -205,6 +234,28 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.呼吸光動畫, new cjs.Rectangle(0,0,205.8,60), null);
 
 
+(lib.愛心 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// 圖層_1
+	this.instance = new lib.彩心();
+	this.instance.setTransform(71.65,0,0.6489,0.6489,45.8003);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.愛心, new cjs.Rectangle(0,0,159,159.5), null);
+
+
 (lib.按鈕4巴曲花波w = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -218,9 +269,9 @@ if (reversed == null) { reversed = false; }
 
 	// 圖
 	this.instance = new lib.YouTubeICON();
-	this.instance.setTransform(0,0,0.1484,0.1484);
+	this.instance.setTransform(0,0,0.2969,0.2969);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.1633,scaleY:0.1633,x:-8,y:-8},0).wait(1).to({scaleX:0.1484,scaleY:0.1484,x:0,y:0},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.3265,scaleY:0.3265,x:-8,y:-8},0).wait(1).to({scaleX:0.2969,scaleY:0.2969,x:0,y:0},0).wait(1));
 
 	// 圖層_2
 	this.instance_1 = new lib.YouTube();
@@ -247,9 +298,9 @@ if (reversed == null) { reversed = false; }
 
 	// 圖
 	this.instance = new lib.聯絡我們ICON();
-	this.instance.setTransform(0,0,0.1484,0.1484);
+	this.instance.setTransform(0,0,0.2969,0.2969);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.1633,scaleY:0.1633,x:-8,y:-8},0).wait(1).to({scaleX:0.1484,scaleY:0.1484,x:0,y:0},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.3265,scaleY:0.3265,x:-8,y:-8},0).wait(1).to({scaleX:0.2969,scaleY:0.2969,x:0,y:0},0).wait(1));
 
 	// 圖層_2
 	this.instance_1 = new lib.聯絡我們();
@@ -275,9 +326,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// 圖
-	this.instance = new lib.icon_152();
+	this.instance = new lib.LINEICON();
+	this.instance.setTransform(0,0,0.1484,0.1484);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.1633,scaleY:0.1633,x:-8,y:-8},0).wait(1).to({scaleX:0.1484,scaleY:0.1484,x:0,y:0},0).wait(1));
 
 	// 圖層_2
 	this.instance_1 = new lib.LINE貼圖();
@@ -368,6 +420,54 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,205.8,60);
+
+
+(lib.鑽石動畫 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// 圖層_1
+	this.instance = new lib.鑽石();
+	this.instance.setTransform(79.05,154.4,0.5,0.5,0,0,0,79.5,79.8);
+	this.instance.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:1,scaleY:1,guide:{path:[79,154.3,78,149.4,76.2,143.2,70.3,122.6,59.9,104.5,26.6,46.6,-38.9,34.1]},alpha:1},19).wait(30).to({alpha:0},10).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-118.5,-45.7,227.6,218.5);
+
+
+(lib.愛心動畫 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// 圖層_1
+	this.instance = new lib.愛心();
+	this.instance.setTransform(2.55,239.35,0.5,0.5,0,0,0,79.5,79.8);
+	this.instance.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:79.7,scaleX:1,scaleY:1,guide:{path:[0,239.4,0,234.2,0.6,226.7,2.2,207.4,8.2,188,27.1,125.8,81.9,85.3]},alpha:1},19).wait(30).to({alpha:0},10).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-43.6,5.5,205,273.7);
 
 
 // stage content:
@@ -591,27 +691,33 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	// 圖
+	// 喜鵲
 	this.instance_1 = new lib.喜鵲();
 	this.instance_1.setTransform(485,283,0.6,0.6);
 
-	this.instance_2 = new lib.寶盒呼吸光_1();
-	this.instance_2.setTransform(598.9,306,1,1,0,0,0,102.9,30);
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
-	this.instance_3 = new lib.文鳥小麥();
-	this.instance_3.setTransform(59,204);
+	// 動畫
+	this.instance_2 = new lib.鑽石動畫();
+	this.instance_2.setTransform(612.85,296.45,1,1,0,0,0,69.8,58.3);
 
-	this.instance_4 = new lib.鳥3();
-	this.instance_4.setTransform(847,249,0.9109,0.9056);
+	this.instance_3 = new lib.愛心動畫();
+	this.instance_3.setTransform(685.3,216.5,1,1,0,0,0,79.5,79.7);
 
-	this.instance_5 = new lib.寶盒();
-	this.instance_5.setTransform(485,283,0.6,0.6);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2}]}).wait(1));
 
-	this.instance_6 = new lib.彩心();
-	this.instance_6.setTransform(663.45,136.8,0.6489,0.6489,45.8003);
+	// 圖
+	this.instance_4 = new lib.寶盒呼吸光_1();
+	this.instance_4.setTransform(598.9,306,1,1,0,0,0,102.9,30);
 
-	this.instance_7 = new lib.彩鑽LR();
-	this.instance_7.setTransform(463.3,250.55,0.5493,0.5493,-22.84);
+	this.instance_5 = new lib.文鳥小麥();
+	this.instance_5.setTransform(59,204);
+
+	this.instance_6 = new lib.鳥3();
+	this.instance_6.setTransform(847,249,0.9109,0.9056);
+
+	this.instance_7 = new lib.寶盒();
+	this.instance_7.setTransform(485,283,0.6,0.6);
 
 	this.instance_8 = new lib.Buff天地();
 	this.instance_8.setTransform(23,494,0.7,0.7);
@@ -622,7 +728,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_10 = new lib.標題底();
 	this.instance_10.setTransform(0,480,1.8265,0.8696);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4}]}).wait(1));
 
 	// 下底
 	this.instance_11 = new lib.封面底();
@@ -643,7 +749,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1717948019977", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1717995171185", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
