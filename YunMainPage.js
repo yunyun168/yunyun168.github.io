@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[1132,1812,657,138],[1540,274,152,152],[1026,668,134,130],[1026,800,134,130],[1202,1302,564,168],[1202,1472,564,168],[1026,514,152,152],[1716,829,217,139],[1768,1237,193,154],[0,0,1024,1024],[1150,1642,564,168],[0,1726,564,168],[1026,0,512,512],[0,1628,1148,96],[566,1726,564,168],[1202,514,512,512],[1540,0,394,272],[1202,1028,394,272],[1598,1137,336,98],[1716,274,297,297],[1598,1028,413,107],[1716,573,297,254]]}
+		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[566,1812,657,138],[1026,514,134,130],[1026,646,134,130],[1202,1302,564,168],[1540,274,152,152],[1716,829,217,139],[1768,1237,193,154],[0,0,1024,1024],[1202,1472,564,168],[1150,1642,564,168],[1026,0,512,512],[0,1628,1148,96],[0,1726,564,168],[1202,514,512,512],[1540,0,394,272],[1202,1028,394,272],[1598,1137,336,98],[1716,274,297,297],[1598,1028,413,107],[1716,573,297,254]]}
 ];
 
 
@@ -41,149 +41,135 @@ lib.ssMetadata = [
 
 
 
-(lib.APKicon_152 = function() {
+(lib.Buff天地 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Buff天地 = function() {
+(lib.Buff太極 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Buff太極 = function() {
+(lib.GooglePlay = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.DownloadAPK = function() {
+(lib.icon_152 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.GooglePlay = function() {
+(lib.彩鑽LR = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.icon_152 = function() {
+(lib.彩心 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.彩鑽LR = function() {
+(lib.LINEICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.彩心 = function() {
+(lib.LINE貼圖 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LINEICON = function() {
+(lib.聯絡我們 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LINE貼圖 = function() {
+(lib.聯絡我們ICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們 = function() {
+(lib.結合 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們ICON = function() {
+(lib.YouTube = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.結合 = function() {
+(lib.YouTubeICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.YouTube = function() {
+(lib.喜鵲 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.YouTubeICON = function() {
+(lib.寶盒 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.喜鵲 = function() {
+(lib.寶盒呼吸光 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.寶盒 = function() {
+(lib.文鳥小麥 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.寶盒呼吸光 = function() {
+(lib.芸雀工房 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.文鳥小麥 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(20);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.芸雀工房 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(21);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.鳥3 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(22);
+	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -283,20 +269,20 @@ if (reversed == null) { reversed = false; }
 
 	// 圖
 	this.instance = new lib.YouTubeICON();
-	this.instance.setTransform(0,0,0.2969,0.2969);
+	this.instance.setTransform(0,0,0.3906,0.3906);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.3265,scaleY:0.3265,x:-8,y:-8},0).wait(1).to({scaleX:0.2969,scaleY:0.2969,x:0,y:0},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.4297,scaleY:0.4297,x:-10,y:-10},0).wait(1).to({scaleX:0.3906,scaleY:0.3906,x:0,y:0},0).wait(1));
 
 	// 圖層_2
 	this.instance_1 = new lib.YouTube();
-	this.instance_1.setTransform(0,152,0.2695,0.2696);
+	this.instance_1.setTransform(0,200,0.3546,0.3547);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:159},0).wait(1).to({y:152},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:210},0).wait(1).to({y:200},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,212.3);
+p.nominalBounds = new cjs.Rectangle(-10,-10,220,279.6);
 
 
 (lib.按鈕3巴曲花波a = function(mode,startPosition,loop,reversed) {
@@ -312,20 +298,20 @@ if (reversed == null) { reversed = false; }
 
 	// 圖
 	this.instance = new lib.聯絡我們ICON();
-	this.instance.setTransform(0,0,0.2969,0.2969);
+	this.instance.setTransform(0,0,0.3906,0.3906);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.3265,scaleY:0.3265,x:-8,y:-8},0).wait(1).to({scaleX:0.2969,scaleY:0.2969,x:0,y:0},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.4296,scaleY:0.4296,x:-10,y:-10},0).wait(1).to({scaleX:0.3906,scaleY:0.3906,x:0,y:0},0).wait(1));
 
 	// 圖層_2
 	this.instance_1 = new lib.聯絡我們();
-	this.instance_1.setTransform(0,152,0.2695,0.2696);
+	this.instance_1.setTransform(0,200,0.3546,0.3547);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:159},0).wait(1).to({y:152},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({scaleX:0.3901,scaleY:0.3901,x:-10,y:210},0).wait(1).to({scaleX:0.3546,scaleY:0.3547,x:0,y:200},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,212.3);
+p.nominalBounds = new cjs.Rectangle(-10,-10,220,285.6);
 
 
 (lib.按鈕2字庫編輯器w = function(mode,startPosition,loop,reversed) {
@@ -341,48 +327,20 @@ if (reversed == null) { reversed = false; }
 
 	// 圖
 	this.instance = new lib.LINEICON();
-	this.instance.setTransform(0,0,0.1484,0.1484);
+	this.instance.setTransform(0,0,0.1953,0.1953);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.1633,scaleY:0.1633,x:-8,y:-8},0).wait(1).to({scaleX:0.1484,scaleY:0.1484,x:0,y:0},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.2148,scaleY:0.2148,x:-10,y:-10},0).wait(1).to({scaleX:0.1953,scaleY:0.1953,x:0,y:0},0).wait(1));
 
 	// 圖層_2
 	this.instance_1 = new lib.LINE貼圖();
-	this.instance_1.setTransform(0,152,0.2695,0.2696);
+	this.instance_1.setTransform(0,200,0.3546,0.3547);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:159},0).wait(1).to({y:152},0).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,212.3);
-
-
-(lib.按鈕1易經姓名學a = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// 圖
-	this.instance = new lib.APKicon_152();
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
-
-	// 圖層_2
-	this.instance_1 = new lib.DownloadAPK();
-	this.instance_1.setTransform(0,152,0.2695,0.2696);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:159},0).wait(1).to({y:152},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({scaleX:0.3901,scaleY:0.3901,x:-10,y:210},0).wait(1).to({scaleX:0.3546,scaleY:0.3547,x:0,y:200},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,212.3);
+p.nominalBounds = new cjs.Rectangle(-10,-10,220,285.6);
 
 
 (lib.按鈕0易經姓名學w = function(mode,startPosition,loop,reversed) {
@@ -398,19 +356,20 @@ if (reversed == null) { reversed = false; }
 
 	// 圖
 	this.instance = new lib.icon_152();
+	this.instance.setTransform(0,0,1.3158,1.3158);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.1,scaleY:1.1,x:-8,y:-8},0).wait(1).to({scaleX:1,scaleY:1,x:0,y:0},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.4474,scaleY:1.4474,x:-10,y:-10},0).wait(1).to({scaleX:1.3158,scaleY:1.3158,x:0,y:0},0).wait(1));
 
 	// 圖層_2
 	this.instance_1 = new lib.GooglePlay();
-	this.instance_1.setTransform(0,152,0.2695,0.2696);
+	this.instance_1.setTransform(0,200,0.3546,0.3547);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:159},0).wait(1).to({y:152},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:210},0).wait(1).to({y:200},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-8,-8,167.2,212.3);
+p.nominalBounds = new cjs.Rectangle(-10,-10,220,279.6);
 
 
 (lib.寶盒呼吸光_1 = function(mode,startPosition,loop,reversed) {
@@ -603,30 +562,25 @@ if (reversed == null) { reversed = false; }
 	// 按鈕
 	this.Fun2_btn = new lib.按鈕2字庫編輯器w();
 	this.Fun2_btn.name = "Fun2_btn";
-	this.Fun2_btn.setTransform(765.35,678.7);
+	this.Fun2_btn.setTransform(630.5,667.7);
 	new cjs.ButtonHelper(this.Fun2_btn, 0, 1, 2);
 
 	this.Fun3_btn = new lib.按鈕4巴曲花波w();
 	this.Fun3_btn.name = "Fun3_btn";
-	this.Fun3_btn.setTransform(1012.8,678.7);
+	this.Fun3_btn.setTransform(889.8,667.7);
 	new cjs.ButtonHelper(this.Fun3_btn, 0, 1, 2);
-
-	this.Fun1_btn = new lib.按鈕1易經姓名學a();
-	this.Fun1_btn.name = "Fun1_btn";
-	this.Fun1_btn.setTransform(270.45,678.7);
-	new cjs.ButtonHelper(this.Fun1_btn, 0, 1, 2);
 
 	this.Fun4_btn = new lib.按鈕3巴曲花波a();
 	this.Fun4_btn.name = "Fun4_btn";
-	this.Fun4_btn.setTransform(517.9,678.7);
+	this.Fun4_btn.setTransform(371.25,667.7);
 	new cjs.ButtonHelper(this.Fun4_btn, 0, 1, 2);
 
 	this.Fun0_btn = new lib.按鈕0易經姓名學w();
 	this.Fun0_btn.name = "Fun0_btn";
-	this.Fun0_btn.setTransform(23,678.7);
+	this.Fun0_btn.setTransform(112,667.7);
 	new cjs.ButtonHelper(this.Fun0_btn, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun4_btn},{t:this.Fun1_btn},{t:this.Fun3_btn},{t:this.Fun2_btn}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun4_btn},{t:this.Fun3_btn},{t:this.Fun2_btn}]}).wait(1));
 
 	// 標題
 	this.instance = new lib.芸雀工房();
@@ -688,7 +642,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(600,600,600,283);
+p.nominalBounds = new cjs.Rectangle(600,600,600,343.29999999999995);
 // library properties:
 lib.properties = {
 	id: 'FBB73EEB2896D94A9333B71285A95BF6',
@@ -698,7 +652,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1718025056072", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1718108130743", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
