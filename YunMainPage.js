@@ -472,12 +472,11 @@ if (reversed == null) { reversed = false; }
 		var g_sToolsPath = "";
 		
 		var g_mFilename = ["https://play.google.com/store/apps/details?id=air.tw.com.maxddd23.luckynameenergy", 
-		                   "https://drive.google.com/file/d/1kZBRnMfzLvFa8qraZ8nTfcrhNQhsRMV5/view?usp=sharing", 
 						   "https://store.line.me/stickershop/author/4773774/zh-Hant", 
 						   "https://www.youtube.com/channel/UCPumEerBsGyqmZ-JLH2475Q", 
 						   "mailto:yunyunservice168@gmail.com?subject=問題回報"];
 		
-		
+		//"https://drive.google.com/file/d/1kZBRnMfzLvFa8qraZ8nTfcrhNQhsRMV5/view?usp=sharing"
 		//================================================================= Private Function		
 		/*=====================
 		function:參數初始化
@@ -560,27 +559,27 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// 按鈕
-	this.Fun2_btn = new lib.按鈕2字庫編輯器w();
+	this.Fun1_btn = new lib.按鈕2字庫編輯器w();
+	this.Fun1_btn.name = "Fun1_btn";
+	this.Fun1_btn.setTransform(630.5,667.7);
+	new cjs.ButtonHelper(this.Fun1_btn, 0, 1, 2);
+
+	this.Fun2_btn = new lib.按鈕4巴曲花波w();
 	this.Fun2_btn.name = "Fun2_btn";
-	this.Fun2_btn.setTransform(630.5,667.7);
+	this.Fun2_btn.setTransform(889.8,667.7);
 	new cjs.ButtonHelper(this.Fun2_btn, 0, 1, 2);
 
-	this.Fun3_btn = new lib.按鈕4巴曲花波w();
+	this.Fun3_btn = new lib.按鈕3巴曲花波a();
 	this.Fun3_btn.name = "Fun3_btn";
-	this.Fun3_btn.setTransform(889.8,667.7);
+	this.Fun3_btn.setTransform(371.25,667.7);
 	new cjs.ButtonHelper(this.Fun3_btn, 0, 1, 2);
-
-	this.Fun4_btn = new lib.按鈕3巴曲花波a();
-	this.Fun4_btn.name = "Fun4_btn";
-	this.Fun4_btn.setTransform(371.25,667.7);
-	new cjs.ButtonHelper(this.Fun4_btn, 0, 1, 2);
 
 	this.Fun0_btn = new lib.按鈕0易經姓名學w();
 	this.Fun0_btn.name = "Fun0_btn";
 	this.Fun0_btn.setTransform(112,667.7);
 	new cjs.ButtonHelper(this.Fun0_btn, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun4_btn},{t:this.Fun3_btn},{t:this.Fun2_btn}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun3_btn},{t:this.Fun2_btn},{t:this.Fun1_btn}]}).wait(1));
 
 	// 標題
 	this.instance = new lib.芸雀工房();
@@ -652,7 +651,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1718108130743", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1718109109251", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
