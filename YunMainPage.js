@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[566,1812,657,138],[1026,514,134,130],[1026,646,134,130],[1202,1302,564,168],[1540,274,152,152],[1716,829,217,139],[1768,1237,193,154],[0,0,1024,1024],[1202,1472,564,168],[1150,1642,564,168],[1026,0,512,512],[0,1628,1148,96],[0,1726,564,168],[1202,514,512,512],[1540,0,394,272],[1202,1028,394,272],[1598,1137,336,98],[1716,274,297,297],[1598,1028,413,107],[1716,573,297,254]]}
+		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[1026,514,564,168],[1839,0,152,152],[1026,684,564,168],[0,0,1024,1024],[1026,854,564,168],[1202,1024,564,168],[1026,0,512,512],[1540,0,297,297],[1592,555,413,107],[1592,299,297,254]]}
 ];
 
 
@@ -34,255 +34,74 @@ lib.ssMetadata = [
 
 
 
-(lib.標題底 = function() {
+(lib.GooglePlay = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Buff天地 = function() {
+(lib.icon_152 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Buff太極 = function() {
+(lib.iSO = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.GooglePlay = function() {
+(lib.LINEICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.icon_152 = function() {
+(lib.LINE貼圖 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.彩鑽LR = function() {
+(lib.聯絡我們 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.彩心 = function() {
+(lib.聯絡我們ICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LINEICON = function() {
+(lib.文鳥小麥 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LINE貼圖 = function() {
+(lib.芸雀工房 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們 = function() {
+(lib.鳥3 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
-
-
-(lib.聯絡我們ICON = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(11);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.結合 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(12);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.YouTube = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(13);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.YouTubeICON = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(14);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.喜鵲 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(15);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.寶盒 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(16);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.寶盒呼吸光 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(17);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.文鳥小麥 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(18);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.芸雀工房 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(19);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.鳥3 = function() {
-	this.initialize(ss["YunMainPage_atlas_P_1"]);
-	this.gotoAndStop(20);
-}).prototype = p = new cjs.Sprite();
-// helper functions:
-
-function mc_symbol_clone() {
-	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
-	clone.gotoAndStop(this.currentFrame);
-	clone.paused = this.paused;
-	clone.framerate = this.framerate;
-	return clone;
-}
-
-function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
-	var prototype = cjs.extend(symbol, cjs.MovieClip);
-	prototype.clone = mc_symbol_clone;
-	prototype.nominalBounds = nominalBounds;
-	prototype.frameBounds = frameBounds;
-	return prototype;
-	}
-
-
-(lib.鑽石 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// 圖層_1
-	this.instance = new lib.彩鑽LR();
-	this.instance.setTransform(0,46.25,0.5493,0.5493,-22.84);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.鑽石, new cjs.Rectangle(0,0,139.5,116.6), null);
-
-
-(lib.呼吸光動畫 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// 圖層_1
-	this.instance = new lib.寶盒呼吸光();
-	this.instance.setTransform(0,0,0.6123,0.6122);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.呼吸光動畫, new cjs.Rectangle(0,0,205.8,60), null);
-
-
-(lib.愛心 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// 圖層_1
-	this.instance = new lib.彩心();
-	this.instance.setTransform(71.65,0,0.6489,0.6489,45.8003);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.愛心, new cjs.Rectangle(0,0,159,159.5), null);
-
-
-(lib.按鈕4巴曲花波w = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// 圖
-	this.instance = new lib.YouTubeICON();
-	this.instance.setTransform(0,0,0.3906,0.3906);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.4297,scaleY:0.4297,x:-10,y:-10},0).wait(1).to({scaleX:0.3906,scaleY:0.3906,x:0,y:0},0).wait(1));
-
-	// 圖層_2
-	this.instance_1 = new lib.YouTube();
-	this.instance_1.setTransform(0,200,0.3546,0.3547);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:210},0).wait(1).to({y:200},0).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-10,-10,220,279.6);
 
 
 (lib.按鈕3巴曲花波a = function(mode,startPosition,loop,reversed) {
@@ -372,7 +191,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-10,-10,220,279.6);
 
 
-(lib.寶盒呼吸光_1 = function(mode,startPosition,loop,reversed) {
+(lib.按鈕0易經姓名學ios = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -383,64 +202,22 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// 圖層_1
-	this.instance = new lib.呼吸光動畫();
-	this.instance.setTransform(102.9,30,1,1,0,0,0,102.9,30);
+	// 圖
+	this.instance = new lib.icon_152();
+	this.instance.setTransform(0,0,1.3158,1.3158);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0.9655},0).wait(1).to({alpha:0.931},0).wait(1).to({alpha:0.8966},0).wait(1).to({alpha:0.8621},0).wait(1).to({alpha:0.8276},0).wait(1).to({alpha:0.7931},0).wait(1).to({alpha:0.7586},0).wait(1).to({alpha:0.7241},0).wait(1).to({alpha:0.6897},0).wait(1).to({alpha:0.6552},0).wait(1).to({alpha:0.6207},0).wait(1).to({alpha:0.5862},0).wait(1).to({alpha:0.5517},0).wait(1).to({alpha:0.5172},0).wait(1).to({alpha:0.4828},0).wait(1).to({alpha:0.4483},0).wait(1).to({alpha:0.4138},0).wait(1).to({alpha:0.3793},0).wait(1).to({alpha:0.3448},0).wait(1).to({alpha:0.3103},0).wait(1).to({alpha:0.2759},0).wait(1).to({alpha:0.2414},0).wait(1).to({alpha:0.2069},0).wait(1).to({alpha:0.1724},0).wait(1).to({alpha:0.1379},0).wait(1).to({alpha:0.1034},0).wait(1).to({alpha:0.069},0).wait(1).to({alpha:0.0345},0).wait(1).to({alpha:0},0).wait(1).to({alpha:0.0333},0).wait(1).to({alpha:0.0667},0).wait(1).to({alpha:0.1},0).wait(1).to({alpha:0.1333},0).wait(1).to({alpha:0.1667},0).wait(1).to({alpha:0.2},0).wait(1).to({alpha:0.2333},0).wait(1).to({alpha:0.2667},0).wait(1).to({alpha:0.3},0).wait(1).to({alpha:0.3333},0).wait(1).to({alpha:0.3667},0).wait(1).to({alpha:0.4},0).wait(1).to({alpha:0.4333},0).wait(1).to({alpha:0.4667},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.5333},0).wait(1).to({alpha:0.5667},0).wait(1).to({alpha:0.6},0).wait(1).to({alpha:0.6333},0).wait(1).to({alpha:0.6667},0).wait(1).to({alpha:0.7},0).wait(1).to({alpha:0.7333},0).wait(1).to({alpha:0.7667},0).wait(1).to({alpha:0.8},0).wait(1).to({alpha:0.8333},0).wait(1).to({alpha:0.8667},0).wait(1).to({alpha:0.9},0).wait(1).to({alpha:0.9333},0).wait(1).to({alpha:0.9667},0).wait(1).to({alpha:1},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.4474,scaleY:1.4474,x:-10,y:-10},0).wait(1).to({scaleX:1.3158,scaleY:1.3158,x:0,y:0},0).wait(1));
 
-	this._renderFirstFrame();
+	// 圖層_2
+	this.instance_1 = new lib.iSO();
+	this.instance_1.setTransform(0,200,0.3546,0.3547);
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,205.8,60);
-
-
-(lib.鑽石動畫 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// 圖層_1
-	this.instance = new lib.鑽石();
-	this.instance.setTransform(79.05,154.4,0.5,0.5,0,0,0,79.5,79.8);
-	this.instance.alpha = 0;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:79.9,scaleX:0.6842,scaleY:0.6842,guide:{path:[79.1,154.3,78.1,149.4,76.2,143.2,70.3,122.6,59.9,104.5,56.8,99.1,53.4,94]}},7).to({regY:79.8,scaleX:1,scaleY:1,guide:{path:[53.4,94.1,20.5,45.5,-38.9,34.2]},alpha:1},12).wait(30).to({alpha:0},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:210},0).wait(1).to({y:200},0).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-118.5,-45.7,227.6,218.5);
-
-
-(lib.愛心動畫 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// 圖層_1
-	this.instance = new lib.愛心();
-	this.instance.setTransform(2.55,239.35,0.5,0.5,0,0,0,79.5,79.8);
-	this.instance.alpha = 0;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:79.9,scaleX:0.7105,scaleY:0.7105,guide:{path:[0,239.4,-0.1,234.2,0.5,226.7,2.2,207.4,8.1,188,11.6,176.4,16.4,165.5]}},8).to({regY:79.7,scaleX:1,scaleY:1,guide:{path:[16.5,165.6,37.4,118.3,81.9,85.2]},alpha:1},11).wait(30).to({alpha:0},10).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-43.6,5.5,205,273.7);
+p.nominalBounds = new cjs.Rectangle(-10,-10,220,279.6);
 
 
 // stage content:
@@ -473,9 +250,9 @@ if (reversed == null) { reversed = false; }
 		
 		var g_mFilename = ["https://play.google.com/store/apps/details?id=air.tw.com.maxddd23.luckynameenergy", 
 						   "https://store.line.me/stickershop/author/4773774/zh-Hant", 
-						   "https://www.youtube.com/channel/UCPumEerBsGyqmZ-JLH2475Q", 
+						   "https://apps.apple.com/tw/app/id6504865954", 
 						   "mailto:yunyunservice168@gmail.com?subject=問題回報"];
-		
+		//https://www.youtube.com/channel/UCPumEerBsGyqmZ-JLH2475Q
 		//"https://drive.google.com/file/d/1kZBRnMfzLvFa8qraZ8nTfcrhNQhsRMV5/view?usp=sharing"
 		//================================================================= Private Function		
 		/*=====================
@@ -559,19 +336,19 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// 按鈕
+	this.Fun2_btn = new lib.按鈕0易經姓名學ios();
+	this.Fun2_btn.name = "Fun2_btn";
+	this.Fun2_btn.setTransform(371.3,667.7);
+	new cjs.ButtonHelper(this.Fun2_btn, 0, 1, 2);
+
 	this.Fun1_btn = new lib.按鈕2字庫編輯器w();
 	this.Fun1_btn.name = "Fun1_btn";
-	this.Fun1_btn.setTransform(630.5,667.7);
+	this.Fun1_btn.setTransform(890,667.7);
 	new cjs.ButtonHelper(this.Fun1_btn, 0, 1, 2);
-
-	this.Fun2_btn = new lib.按鈕4巴曲花波w();
-	this.Fun2_btn.name = "Fun2_btn";
-	this.Fun2_btn.setTransform(889.8,667.7);
-	new cjs.ButtonHelper(this.Fun2_btn, 0, 1, 2);
 
 	this.Fun3_btn = new lib.按鈕3巴曲花波a();
 	this.Fun3_btn.name = "Fun3_btn";
-	this.Fun3_btn.setTransform(371.25,667.7);
+	this.Fun3_btn.setTransform(630.6,667.7);
 	new cjs.ButtonHelper(this.Fun3_btn, 0, 1, 2);
 
 	this.Fun0_btn = new lib.按鈕0易經姓名學w();
@@ -579,64 +356,28 @@ if (reversed == null) { reversed = false; }
 	this.Fun0_btn.setTransform(112,667.7);
 	new cjs.ButtonHelper(this.Fun0_btn, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun3_btn},{t:this.Fun2_btn},{t:this.Fun1_btn}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun3_btn},{t:this.Fun1_btn},{t:this.Fun2_btn}]}).wait(1));
 
 	// 標題
 	this.instance = new lib.芸雀工房();
-	this.instance.setTransform(438,16,0.7748,0.7747);
+	this.instance.setTransform(403,251);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	// 內文
-	this.instance_1 = new lib.結合();
-	this.instance_1.setTransform(151,504,0.784,0.7833);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
-
-	// 喜鵲
-	this.instance_2 = new lib.喜鵲();
-	this.instance_2.setTransform(485,283,0.6,0.6);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
-
-	// 動畫
-	this.instance_3 = new lib.鑽石動畫();
-	this.instance_3.setTransform(612.85,296.45,1,1,0,0,0,69.8,58.3);
-
-	this.instance_4 = new lib.愛心動畫();
-	this.instance_4.setTransform(685.3,216.5,1,1,0,0,0,79.5,79.7);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.instance_3}]}).wait(1));
-
 	// 圖
-	this.instance_5 = new lib.寶盒呼吸光_1();
-	this.instance_5.setTransform(598.9,306,1,1,0,0,0,102.9,30);
+	this.instance_1 = new lib.文鳥小麥();
+	this.instance_1.setTransform(51,303);
 
-	this.instance_6 = new lib.文鳥小麥();
-	this.instance_6.setTransform(59,204);
+	this.instance_2 = new lib.鳥3();
+	this.instance_2.setTransform(894,370,0.9109,0.9056);
 
-	this.instance_7 = new lib.鳥3();
-	this.instance_7.setTransform(847,249,0.9109,0.9056);
-
-	this.instance_8 = new lib.寶盒();
-	this.instance_8.setTransform(485,283,0.6,0.6);
-
-	this.instance_9 = new lib.Buff天地();
-	this.instance_9.setTransform(23,494,0.7,0.7);
-
-	this.instance_10 = new lib.Buff太極();
-	this.instance_10.setTransform(1088,494,0.7,0.7);
-
-	this.instance_11 = new lib.標題底();
-	this.instance_11.setTransform(0,480,1.8265,0.8696);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1}]}).wait(1));
 
 	// 下底
-	this.instance_12 = new lib.封面底();
-	this.instance_12.setTransform(0,0,1,1,-0.0009);
+	this.instance_3 = new lib.封面底();
+	this.instance_3.setTransform(0,0,1,1,-0.0009);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
 
 	this._renderFirstFrame();
 
@@ -651,7 +392,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1718109109251", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1719482633627", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
