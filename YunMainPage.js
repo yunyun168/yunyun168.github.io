@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[1026,514,564,168],[1839,0,152,152],[1026,684,564,168],[0,0,1024,1024],[1026,854,564,168],[1202,1024,564,168],[1026,0,512,512],[1540,0,297,297],[1592,555,413,107],[1592,299,297,254]]}
+		{name:"YunMainPage_atlas_P_1", frames: [[0,1026,1200,600],[1026,514,564,168],[1839,0,152,152],[1891,154,152,152],[1026,684,564,168],[0,0,1024,1024],[1026,854,564,168],[1202,1024,564,168],[1026,0,512,512],[1540,0,297,297],[1592,555,413,107],[1592,299,297,254]]}
 ];
 
 
@@ -48,58 +48,65 @@ lib.ssMetadata = [
 
 
 
-(lib.iSO = function() {
+(lib.icon_152_貴人 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LINEICON = function() {
+(lib.iSO = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LINE貼圖 = function() {
+(lib.LINEICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們 = function() {
+(lib.LINE貼圖 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.聯絡我們ICON = function() {
+(lib.聯絡我們 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.文鳥小麥 = function() {
+(lib.聯絡我們ICON = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.芸雀工房 = function() {
+(lib.文鳥小麥 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.鳥3 = function() {
+(lib.芸雀工房 = function() {
 	this.initialize(ss["YunMainPage_atlas_P_1"]);
 	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.鳥3 = function() {
+	this.initialize(ss["YunMainPage_atlas_P_1"]);
+	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -162,7 +169,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-10,-10,220,285.6);
 
 
-(lib.按鈕0易經姓名學w = function(mode,startPosition,loop,reversed) {
+(lib.按鈕1芸雀異聞錄w = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -175,6 +182,35 @@ if (reversed == null) { reversed = false; }
 
 	// 圖
 	this.instance = new lib.icon_152();
+	this.instance.setTransform(0,0,1.3158,1.3158);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.4474,scaleY:1.4474,x:-10,y:-10},0).wait(1).to({scaleX:1.3158,scaleY:1.3158,x:0,y:0},0).wait(1));
+
+	// 圖層_2
+	this.instance_1 = new lib.GooglePlay();
+	this.instance_1.setTransform(0,200,0.3546,0.3547);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({y:210},0).wait(1).to({y:200},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-10,-10,220,279.6);
+
+
+(lib.按鈕0易經姓名學w = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// 圖
+	this.instance = new lib.icon_152_貴人();
 	this.instance.setTransform(0,0,1.3158,1.3158);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:1.4474,scaleY:1.4474,x:-10,y:-10},0).wait(1).to({scaleX:1.3158,scaleY:1.3158,x:0,y:0},0).wait(1));
@@ -249,8 +285,9 @@ if (reversed == null) { reversed = false; }
 		var g_sToolsPath = "";
 		
 		var g_mFilename = ["https://play.google.com/store/apps/details?id=air.tw.com.maxddd23.luckynameenergy", 
+						   "https://play.google.com/store/apps/details?id=air.tw.com.yunquegame.nameenergygame",
+						   "https://apps.apple.com/tw/app/id6605929369", 
 						   "https://store.line.me/stickershop/author/4773774/zh-Hant", 
-						   "https://apps.apple.com/tw/app/id6504865954", 
 						   "mailto:yunyunservice168@gmail.com?subject=問題回報"];
 		//https://www.youtube.com/channel/UCPumEerBsGyqmZ-JLH2475Q
 		//"https://drive.google.com/file/d/1kZBRnMfzLvFa8qraZ8nTfcrhNQhsRMV5/view?usp=sharing"
@@ -336,27 +373,32 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// 按鈕
-	this.Fun2_btn = new lib.按鈕0易經姓名學ios();
-	this.Fun2_btn.name = "Fun2_btn";
-	this.Fun2_btn.setTransform(371.3,667.7);
-	new cjs.ButtonHelper(this.Fun2_btn, 0, 1, 2);
-
-	this.Fun1_btn = new lib.按鈕2字庫編輯器w();
+	this.Fun1_btn = new lib.按鈕1芸雀異聞錄w();
 	this.Fun1_btn.name = "Fun1_btn";
-	this.Fun1_btn.setTransform(890,667.7);
+	this.Fun1_btn.setTransform(260,667.7);
 	new cjs.ButtonHelper(this.Fun1_btn, 0, 1, 2);
 
-	this.Fun3_btn = new lib.按鈕3巴曲花波a();
+	this.Fun2_btn = new lib.按鈕0易經姓名學ios();
+	this.Fun2_btn.name = "Fun2_btn";
+	this.Fun2_btn.setTransform(500,667.7);
+	new cjs.ButtonHelper(this.Fun2_btn, 0, 1, 2);
+
+	this.Fun3_btn = new lib.按鈕2字庫編輯器w();
 	this.Fun3_btn.name = "Fun3_btn";
-	this.Fun3_btn.setTransform(630.6,667.7);
+	this.Fun3_btn.setTransform(980,667.7);
 	new cjs.ButtonHelper(this.Fun3_btn, 0, 1, 2);
+
+	this.Fun4_btn = new lib.按鈕3巴曲花波a();
+	this.Fun4_btn.name = "Fun4_btn";
+	this.Fun4_btn.setTransform(740,667.7);
+	new cjs.ButtonHelper(this.Fun4_btn, 0, 1, 2);
 
 	this.Fun0_btn = new lib.按鈕0易經姓名學w();
 	this.Fun0_btn.name = "Fun0_btn";
-	this.Fun0_btn.setTransform(112,667.7);
+	this.Fun0_btn.setTransform(20,667.7);
 	new cjs.ButtonHelper(this.Fun0_btn, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun3_btn},{t:this.Fun1_btn},{t:this.Fun2_btn}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Fun0_btn},{t:this.Fun4_btn},{t:this.Fun3_btn},{t:this.Fun2_btn},{t:this.Fun1_btn}]}).wait(1));
 
 	// 標題
 	this.instance = new lib.芸雀工房();
@@ -392,7 +434,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/YunMainPage_atlas_P_1.png?1719482633627", id:"YunMainPage_atlas_P_1"}
+		{src:"images/YunMainPage_atlas_P_1.png?1724689383549", id:"YunMainPage_atlas_P_1"}
 	],
 	preloads: []
 };
