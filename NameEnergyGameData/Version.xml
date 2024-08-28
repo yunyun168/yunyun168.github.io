@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <data>
 <!--版本對應-->	
-	<Version0  id="版本對應">0.9.8</Version0>
-	<Version1  id="字庫版本對應">2024_5_8_14_10_51</Version1>
+	<Version0  id="APPLE版本對應">0.9.8</Version0>
+	<Version1  id="GOOGLE版本對應">0.9.8</Version1>
+	<Version2  id="版本對應">0.9.8</Version2>
+	<Version3  id="版本對應">0.9.8</Version3>
+	<Version4  id="版本對應">0.9.8</Version4>
+	<Version5  id="字庫版本對應">2024_5_8_14_10_51</Version5>
 
 <!--URL-->	
 	<URL0  id="字庫表網址">https://d3gl1i6quqwwf2.cloudfront.net/LuckyNameEnergyData/TextStrokeTable.txt</URL0>
