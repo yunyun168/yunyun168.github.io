@@ -17,7 +17,7 @@
 	<URL5  id="YouTube網址">https://www.youtube.com/channel/UCPumEerBsGyqmZ-JLH2475Q</URL5>
 
 <!--鎖定UI-->	
-	<LockUI0  id="討伐凶獸">1</LockUI0>
+	<LockUI0  id="討伐凶獸">0</LockUI0>
 	<LockUI1  id="討伐凶獸訊息">【討伐凶獸】遊戲功能發生異常，目前暫時無法開放，請等待新版本更新。</LockUI1>
 	<LockUI2  id="附屬遊戲1">0</LockUI2>
 	<LockUI3  id="附屬遊戲1訊息">遊戲功能發生異常，目前暫時無法開放，請等待新版本更新。</LockUI3>	
