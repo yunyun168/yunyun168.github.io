@@ -1,77 +1,73 @@
-<!DOCTYPE html>
-<!--
-	NOTES:
-	1. All tokens are represented by '$' sign in the template.
-	2. You can write your code only wherever mentioned.
-	3. All occurrences of existing tokens will be replaced by their appropriate values.
-	4. Blank lines will be removed automatically.
-	5. Remove unnecessary comments before creating your template.
--->
-<html>
+<!doctype html>
 <head>
-<meta charset="UTF-8">
-<meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>芸雀工房</title>
-<!-- write your code here -->
-<style>
-  #animation_container {
-	position:absolute;
-	margin:auto;
-	left:0;right:0;
-  }
-</style>
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="YunMainPage.js?1717900915670"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>隱私權合約</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
 <script>
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-function init() {
-	canvas = document.getElementById("canvas");
-	anim_container = document.getElementById("animation_container");
-	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("FBB73EEB2896D94A9333B71285A95BF6");
-	var lib=comp.getLibrary();
-	createjs.MotionGuidePlugin.install();
-	var loader = new createjs.LoadQueue(false);
-	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
-	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
-	var lib=comp.getLibrary();
-	loader.loadManifest(lib.properties.manifest);
+onResize = function() {
+document.body.style.zoom = window.innerWidth / 960;
 }
-function handleFileLoad(evt, comp) {
-	var images=comp.getImages();	
-	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
-}
-function handleComplete(evt,comp) {
-	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-	var lib=comp.getLibrary();
-	var ss=comp.getSpriteSheet();
-	var queue = evt.target;
-	var ssMetadata = lib.ssMetadata;
-	for(i=0; i<ssMetadata.length; i++) {
-		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
-	}
-	exportRoot = new lib.YunMainPage();
-	stage = new lib.Stage(canvas);
-	stage.enableMouseOver();	
-	//Registers the "tick" event listener.
-	fnStartAnimation = function() {
-		stage.addChild(exportRoot);
-		createjs.Ticker.framerate = lib.properties.fps;
-		createjs.Ticker.addEventListener("tick", stage);
-	}	    
-	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'width',false,1,[canvas,anim_container,dom_overlay_container]);	
-	AdobeAn.compositionLoaded(lib.properties.id);
-	fnStartAnimation();
-}
+window.addEventListener('load', onResize);
+window.addEventListener('resize', onResize);
 </script>
-<!-- write your code here -->
+<style>
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        span {
+            word-wrap:break-word
+        }
+        a {
+            word-wrap:break-word
+        }
+        table {
+            width: 100%;
+            border-spacing: 0px;
+        }
+        th, td
+        {
+            border: 1px solid gray;
+        }
+    </style>
 </head>
-<body onload="init();" style="margin:0px;background-color:rgba(107, 158, 169, 1.00)">
-	<div id="animation_container" style="background-color:rgba(107, 158, 169, 1.00); width:1200px; height:1200px">
-		<canvas id="canvas" width="1200" height="1200" style="position: absolute; display: block; background-color:rgba(107, 158, 169, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1200px; height:1200px; position: absolute; left: 0px; top: 0px; display: block;">
-		</div>
-	</div>
- </body>
+<body>
+<div id="content">
+<div id="content2">
+  <div id="side2">
+    <table width="420" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="489" align="left" valign="top" bgcolor="#FFFFFF" class="style2">
+        <p style="text-align: center;">【隱私權政策】</p>
+        <p class="style_02">歡迎使用【 易術姓名學之貴人神器】 、【 芸雀異聞錄】的應用程式(以下簡稱本應用)，為了尊重及保護您的個人隱私權，本應用制定了隱私權保護條款（Privacy Policy）。本條款將告訴您，在使用本應用以及其延伸服務網站所提供的服務時，本應用收集、運用及保護您個人資料的政策與原則，敬請詳細閱讀。</p>
+        <p class="style_09">一、適用範圍 </p>
+        <p class="style_02">-以下的隱私權保護條款適用於您在本應用活動時，所涉及的個人資料之收集、運用與保護。但不適用於您經由本應用連結至其他網站後所進行之活動，關於您在其他網站的個人資料之保護，適用各該網站的隱私權保護條款。</p>
+        <p class="style_02"><span class="style_09">二、資料蒐集</span><br>
+        <p class="style_02">※根據本應用所提供的不同服務，可能向您蒐集下列個人基本資料：</p>
+		<p class="style_02">-1.本應用會使用網路廣告Admob的第三方SDK。</p>
+        <p class="style_02">-2.您也可能因為本應用的橫幅廣告或宣導之超連結，而參與其他網站或機構主辦的抽獎、競賽或行銷活動，這些機構或連結網站對於您主動提供的個人資訊，各有其個別的隱私權保護條款，其資料處理措施不適用本應用隱私權保護條款，本應用不負擔任何連帶責任。</p>
+        <p class="style_02">-3.如果您寫信或是透過其他管道向我們反應意見，我們將保存此項通訊及處理紀錄。然而您可能在本應用的推薦好友等功能，主動向其他朋友提供個人資料如姓名等。這種形式的資料提供，則不在本應用隱私權保護條款的範圍之內。<br>
+        <p class="style_02">-4.若您是由Google Play商店下載本應用，我們將會以Google API收到的資訊，遵守Google API服務用戶資料政策，包括限制使用要求。<br>
+        <p class="style_02">三、您任何個人資料的分享、公開及運用方式本應用不會任意出售、交換、或出租給其他團體或個人。只有在以下狀況，本應用會在「隱私權保護條款」原則之下，運用您的個人資料。</p>
+        <p class="style_02">-1.提供其他服務或優惠：為了提供您其他服務或優惠權益，需要與提供該服務或優惠之第三者共用您的資料時，本應用會在活動時提供充分說明，並且在資料收集之前通知您，您可以自由選擇是否接受該項特定服務或優惠。</p>
+        <p class="style_02">-2.司法單位因公眾安全，要求本應用公開特定個人資料時，本應用將視司法單位合法正式的程序，以及對本應用所有使用者安全考量下做可能必要之配合。</p> 
+        <p class="style_09">四、Cookies 的運用政策</p>
+        <p class="style_02">-1.Cookie是具有少量數據的文件,常用作匿名唯一標識符。這些內容將從您訪問的網站發送到您的瀏覽器並儲存在設備的內部。</p>
+        <p class="style_02">-2.本應用不使用這些Cookie，但是第三方SDK可能會使用Cookie來收集信息並改進其服務·您可以選擇接受或拒絕這些Cookie，如果您選擇拒絕我們的Cookie，可能無法使用本應用的某些功能。</p>
+        <p class="style_09">五、關於個人信息安全和應盡之自我保護措施</p>
+        <p class="style_02">-1.請妥善保管任何個人資料，請不要將任何個人資料提供給任何人。也盡量避免與其他人共享裝置，以防止他人讀取您的個人資料。</p>
+		<p class="style_02">-2.我們非常重視您向我們提供的個人信息，因此我們正在努力使用商業上可接受的方式來保護您的個人信息，但請記住，沒有通過互聯網傳輸或電子儲存的方式是百分之百安全可靠的，我們無法保證其絕對的安全性。
+        <p class="style_09">六、隱私權保護條款修訂</p> 
+        <p class="style_02">本應用會不定時修訂本項政策，以符合最新之隱私權保護規範。當我們在使用個人資料的規定做較大幅度修改時，我們會在本應用中告知您相關修訂事項。</p> 
+        <p class="style_02">七、聯繫我們</p> 
+        <p class="style_02">如果您對於我們的隱私權保護條款有任何問題或建議，請隨時與我們聯繫（yunyunservice168@gmail.com）。</p>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</body>
 </html>
