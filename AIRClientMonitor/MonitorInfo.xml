@@ -46,5 +46,4 @@
 	<PatchFile0 id="更新殼主程式">ExtendView/AIRMicroClient.app/AIRMicroClient.swf_1</PatchFile0> <!--注意 這個檔案第一次一定要覆蓋 不然會無法啟動-->	
 	<PatchFile1 id="更新殼資訊檔">ExtendView/AIRMicroClient.app/InfoFile/GameInfo.xml_5</PatchFile1> <!--注意 這個檔案第一次一定要覆蓋 不然會無法啟動-->	
 	<PatchFile2 id="更新Webview主程式">ExtendView/BWWebView-win32-ia32/resources/app.asar_6</PatchFile2>
-	<PatchFile3 id="更新Unity主程式">ExtendView/AIRMicroClient.app/BWSimClient.zip_6</PatchFile3><!--注意 這個檔案第一次一定要覆蓋 不然會無法啟動-->
 </data>
