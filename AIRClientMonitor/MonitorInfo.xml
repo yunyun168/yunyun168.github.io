@@ -31,7 +31,7 @@
 	<Message13 id="有新的安裝檔2">有新的安裝檔，按更新後會開始下載並安裝</Message13>
 	<Message14 id="下更新失敗">自動更新失敗，按更新後會引導至官網下載</Message14>
 	<Message15 id="準備啟動安裝檔">啟動安裝檔中...</Message15>
-	<Message16 id="解壓縮封裝檔">開始解壓縮UBW封裝檔...</Message16>
+	<Message16 id="解壓縮封裝檔">開始下載UBW封裝檔...</Message16>
 	<Message17 id="安裝更新檔">開始安裝UBW更新檔...</Message17>
 	<Message18 id="封裝檔內容錯誤">UBW封裝檔內容錯誤</Message18>
 	<Message19 id="安裝更新檔錯誤1">安裝UBW更新檔發生錯誤</Message19>
