@@ -36,7 +36,9 @@
 	<Message18 id="封裝檔內容錯誤">UBW封裝檔內容錯誤</Message18>
 	<Message19 id="安裝更新檔錯誤1">安裝UBW更新檔發生錯誤</Message19>
 	<Message20 id="更新檔發生IO錯誤">下載UBW封裝檔發生IO錯誤</Message20>
-	<Message21 id="啟動異常">啟動宅神爺豪華版發生異常</Message21>
+	<Message21 id="啟動異常">啟動UBW發生異常</Message21>
+	<Message22 id="下載驗證檔">開始下載UBW驗證檔</Message22>
+	<Message23 id="開始下載UBW更新檔">開始下載並安裝UBW更新檔</Message23>
 	
 <!--更新-->		
 	<Patch0 id="更新包檔名">ExtendView.zip</Patch0>
