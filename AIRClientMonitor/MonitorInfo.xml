@@ -15,14 +15,14 @@
 	<Main4 id="測試登入頁網址"></Main4>
 	
 <!--訊息-->	
-	<Message0  id="更新檔發生IO錯誤">下載封裝檔發生IO錯誤</Message0>
+	<Message0  id="更新檔發生IO錯誤">下載BW封裝檔發生IO錯誤</Message0>
 	<Message1  id="更新檔發生安全性錯誤">下載封裝檔發生安全性錯誤</Message1>
 	<Message2  id="更新檔逾時">下載封裝檔逾時</Message2>
 	<Message3  id="更新檔列表資訊錯誤">建立更新檔列表資訊錯誤</Message3>
 	<Message4  id="程式初始化發生錯誤">程式初始化發生錯誤</Message4>
 	<Message5  id="封裝檔內容錯誤">封裝檔內容錯誤</Message5>
-	<Message6  id="解壓縮封裝檔">開始解壓縮封裝檔...</Message6>
-	<Message7  id="安裝更新檔">開始安裝更新檔...</Message7>
+	<Message6  id="解壓縮封裝檔">開始下載BW封裝檔...</Message6>
+	<Message7  id="安裝更新檔">開始安裝BW更新檔...</Message7>
 	<Message8  id="登入畫面">啟動登入畫面中...</Message8>
 	<Message9  id="啟動異常">啟動宅神爺發生異常</Message9>
 	<Message10 id="安裝更新檔錯誤1">安裝更新檔發生錯誤</Message10>
@@ -35,12 +35,15 @@
 	<Message17 id="安裝更新檔">開始安裝UBW更新檔...</Message17>
 	<Message18 id="封裝檔內容錯誤">UBW封裝檔內容錯誤</Message18>
 	<Message19 id="安裝更新檔錯誤1">安裝UBW更新檔發生錯誤</Message19>
+	<Message20 id="更新檔發生IO錯誤">下載UBW封裝檔發生IO錯誤</Message20>
+	<Message21 id="啟動異常">啟動宅神爺豪華版發生異常</Message21>
 	
 <!--更新-->		
 	<Patch0 id="更新包檔名">ExtendView.zip</Patch0>
 	<Patch1 id="更新包版本">6</Patch1>
-	<Patch2 id="UBW更新包檔名">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBW/UBWClient.zip</Patch2>
-	<Patch3 id="UBW更新包版本">1</Patch3>	
+	<Patch2 id="UBW更新包檔名">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/UBWClient.zip</Patch2>
+	<Patch3 id="UBW MD5檔名">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/md5_list.json</Patch3>
+	<Patch4 id="UBW 檔案網址">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/</Patch4>
 	
 <!--更新-->		
 	<PatchFile0 id="更新殼主程式">ExtendView/AIRMicroClient.app/AIRMicroClient.swf_1</PatchFile0> <!--注意 這個檔案第一次一定要覆蓋 不然會無法啟動-->	
