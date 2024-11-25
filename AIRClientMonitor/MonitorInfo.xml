@@ -44,7 +44,7 @@
 	<Patch0 id="更新包檔名">ExtendView.zip</Patch0>
 	<Patch1 id="更新包版本">6</Patch1>
 	<Patch2 id="UBW更新包檔名">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/UBWClient.zip</Patch2>
-	<Patch3 id="UBW MD5檔名">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/md5_list.json</Patch3>
+	<Patch3 id="UBW MD5檔名">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/UBWClient/md5_list.json</Patch3>
 	<Patch4 id="UBW 檔案網址">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/</Patch4>
 	
 <!--更新-->		
