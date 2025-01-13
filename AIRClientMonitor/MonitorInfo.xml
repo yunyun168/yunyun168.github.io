@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+<!--版本-->	
+	<Version0 id="版本">1.0.23</Version0>
+	<Version1 id="更新網址">http://www.bonuswinner.com.tw/BWMicroClient/BWAirMicroClient.exe</Version1>
+	<Version2 id="是否需要通知更新">2</Version2> <!-- 0:不更新 1:網站下載 2:自體更新) -->
+	<Version3 id="自體更新網址">http://www.bonuswinner.com.tw/BWMicroClient/</Version3> <!--http://www.bonuswinner.com.tw/BWMicroClient/-->
+	<Version4 id="自體更新檔案">BWAirMicroClient.exe</Version4>
+	
+<!--主要-->	
+	<Main0 id="遊戲名稱">宅神爺遊藝場</Main0>
+	<Main1 id="登入頁網址">home/micro/#/</Main1>
+	<Main2 id="客服頁網址">http://crm.bonuswinner.com.tw/LR/bw_chat_win.html</Main2>
+	<Main3 id="登入頁尺寸">1000x600</Main3>
+	<Main4 id="測試登入頁網址"></Main4>
+	
+<!--訊息-->	
+	<Message0  id="更新檔發生IO錯誤">下載BW封裝檔發生IO錯誤</Message0>
+	<Message1  id="更新檔發生安全性錯誤">下載封裝檔發生安全性錯誤</Message1>
+	<Message2  id="更新檔逾時">下載封裝檔逾時</Message2>
+	<Message3  id="更新檔列表資訊錯誤">建立更新檔列表資訊錯誤</Message3>
+	<Message4  id="程式初始化發生錯誤">程式初始化發生錯誤</Message4>
+	<Message5  id="封裝檔內容錯誤">封裝檔內容錯誤</Message5>
+	<Message6  id="解壓縮封裝檔">開始下載BW封裝檔...</Message6>
+	<Message7  id="安裝更新檔">開始安裝BW更新檔...</Message7>
+	<Message8  id="登入畫面">啟動登入畫面中...</Message8>
+	<Message9  id="啟動異常">啟動宅神爺發生異常</Message9>
+	<Message10 id="安裝更新檔錯誤1">安裝更新檔發生錯誤</Message10>
+	<Message11 id="安裝更新檔錯誤2">發現新版本，請關閉宅神爺遊藝場並重新啟動</Message11>
+	<Message12 id="有新的安裝檔1">有新的安裝檔，按更新後會引導至官網下載</Message12>
+	<Message13 id="有新的安裝檔2">有新的安裝檔，按更新後會開始下載並安裝</Message13>
+	<Message14 id="下更新失敗">自動更新失敗，按更新後會引導至官網下載</Message14>
+	<Message15 id="準備啟動安裝檔">啟動安裝檔中...</Message15>
+	<Message16 id="解壓縮封裝檔">開始下載UBW封裝檔...</Message16>
+	<Message17 id="安裝更新檔">開始安裝UBW更新檔...</Message17>
+	<Message18 id="封裝檔內容錯誤">UBW封裝檔內容錯誤</Message18>
+	<Message19 id="安裝更新檔錯誤1">安裝UBW更新檔發生錯誤</Message19>
+	<Message20 id="更新檔發生IO錯誤">下載UBW封裝檔發生IO錯誤</Message20>
+	<Message21 id="啟動異常">啟動UBW發生異常</Message21>
+	<Message22 id="下載驗證檔">開始下載UBW驗證檔</Message22>
+	<Message23 id="開始下載UBW更新檔">開始下載並安裝UBW更新檔...</Message23>
+	
+<!--更新-->		
+	<Patch0 id="更新包檔名">ExtendView.zip</Patch0>
+	<Patch1 id="更新包版本">6</Patch1>
+	<Patch2 id="UBW更新包檔名">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/UBWClient.zip</Patch2>
+	<Patch3 id="UBW MD5檔名">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/UBWClient/md5_list.json</Patch3>
+	<Patch4 id="UBW 檔案網址">https://sco-assets-asia.s3.ap-southeast-1.amazonaws.com/UBWPatch/</Patch4>
+	
+<!--更新-->		
+	<PatchFile0 id="更新殼主程式">ExtendView/AIRMicroClient.app/AIRMicroClient.swf_1</PatchFile0> <!--注意 這個檔案第一次一定要覆蓋 不然會無法啟動-->	
+	<PatchFile1 id="更新殼資訊檔">ExtendView/AIRMicroClient.app/InfoFile/GameInfo.xml_5</PatchFile1> <!--注意 這個檔案第一次一定要覆蓋 不然會無法啟動-->	
+	<PatchFile2 id="更新Webview主程式">ExtendView/BWWebView-win32-ia32/resources/app.asar_6</PatchFile2>
+</data>
