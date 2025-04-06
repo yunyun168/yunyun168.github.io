@@ -52,12 +52,11 @@ h1, h2, h3 { /* 設定標題樣式 */
 
 h1 { font-size: 2.5rem; } /* 主標題字體大小 */
 h2 { font-size: 2rem; text-align: center;} /* 區塊標題字體大小、置中 */
-h3 { font-size: 1.5rem; color: #5a4a8a;} /* 次級標題字體大小、顏色 */
+h3 { font-size: 1.5rem; color: #5a4a8a; text-align: center;} /* 次級標題字體大小、顏色 */
 
 p { /* 設定段落樣式 */
     margin-bottom: 1rem; /* 段落下外邊距 */
     color: #555; /* 段落文字顏色 (稍淺的灰色) */
-	text-align: center;/* 段落文字置中 */
 }
 
 .section-padding { /* 通用區塊上下內邊距 */
