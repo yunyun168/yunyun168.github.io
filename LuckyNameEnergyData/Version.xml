@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <data>
 <!--版本對應-->	
-	<Version0  id="版本對應">2.4.0</Version0>
-	<Version1  id="字庫版本對應">2024_5_8_14_10_51</Version1>
+	<Version0  id="版本對應">2.7.0</Version0>
+	<Version1  id="字庫版本對應">2025_2_6_17_48_20</Version1>
 
 <!--URL-->	
-	<URL0  id="字庫表網址">https://d3gl1i6quqwwf2.cloudfront.net/LuckyNameEnergyData/TextStrokeTable.txt</URL0>
+	<URL0  id="字庫表網址">https://yunyun168.github.io/AppCommonData/TextStrokeTable.txt</URL0>
 	<URL1  id="Google網址">https://play.google.com/store/apps/details?id=air.tw.com.maxddd23.luckynameenergy</URL1>
-	<URL2  id="Apple網址">https://apps.apple.com/tw/app/id6504865954</URL2>
+	<URL2  id="遊戲Apple網址">https://apps.apple.com/tw/app/id6605929369</URL2>
 	<URL3  id="隱私政策網址">https://yunquegongfang.webnode.tw/</URL3>
 	<URL4  id="回報網址">mailto:yunyunservice168@gmail.com?subject=問題回報</URL4>
 	<URL5  id="YouTube網址">https://www.youtube.com/channel/UCPumEerBsGyqmZ-JLH2475Q</URL5>
