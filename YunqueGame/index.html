@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"> <!-- 設定語言為繁體中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 使用 UTF-8 編碼 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 設定視口，用於響應式設計 -->
+    <meta name="description" content="芸雀工房 - 探索芸雀異聞錄與易術姓名學之貴人神器等結合命理的獨特遊戲。立即了解詳情並下載！"> <!-- 網站描述，用於 SEO -->
+    <meta name="keywords" content="芸雀工房, 芸雀異聞錄, 易術姓名學之貴人神器, 命理, 姓名學, 卡牌遊戲, 手機遊戲, 獨立遊戲, App Store, Google Play"> <!-- 網站關鍵字，用於 SEO -->
+    <title>芸雀工房 - 命理遊戲</title> <!-- 瀏覽器標籤頁顯示的標題 -->
+    <link rel="stylesheet" href="style.css"> <!-- 連結外部 CSS 樣式表 -->
+    <!-- 可以在這裡加入你的網站圖標 Favicon -->
+    <link rel="icon" href="images/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- ===== 初始全畫面 Logo (Splash Screen) ===== -->
+    <div id="splash-screen">
+        <!-- **重要**: 請將 src 指向你的 Logo 圖片檔案 -->
+        <img src="images/logo-large.png" alt="芸雀工房 Logo">
+    </div>
+
+    <!-- ===== 主要網站內容 (初始時被 Splash Screen 覆蓋) ===== -->
+    <div id="main-content">
+        <header> <!-- 頁首區塊 -->
+            <div class="container"> <!-- 內容容器，用於限制寬度和居中 -->
+                <h1>芸雀工房</h1> <!-- 網站主標題 -->
+                <nav> <!-- 導覽列 -->
+                    <ul> <!-- 無序列表 -->
+                        <li><a href="#game-selection">遊戲選擇</a></li> <!-- 連結到遊戲選擇區塊 -->
+                        <li><a href="#yiwenlu-details">芸雀異聞錄</a></li> <!-- 連結到芸雀異聞錄說明區塊 -->
+                        <li><a href="#guiren-details">貴人神器</a></li> <!-- 連結到貴人神器說明區塊 -->
+                        <li><a href="#about">關於我們</a></li> <!-- 連結到關於我們區塊 -->
+                        <li><a href="#links">相關連結</a></li> <!-- 連結到相關連結區塊 -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main> <!-- 主要內容區 -->
+            <!-- ===== 遊戲選擇區塊 ===== -->
+            <section id="game-selection" class="game-selection-section section-padding">
+                <div class="container">
+                    <h2>選擇您的冒險</h2> <!-- 區塊標題 -->
+                    <div class="game-options"> <!-- 包含所有遊戲選項的容器 -->
+                        <!-- 遊戲選項 1: 芸雀異聞錄 -->
+                        <div class="game-optionImg0">
+                            <h3>芸雀異聞錄</h3> <!-- 遊戲名稱 -->
+                            <!-- 跳轉到詳細說明的連結 -->
+                            <a href="#yiwenlu-details" class="details-link button">查看詳情</a>
+                            <div class="download-buttons"> <!-- 下載按鈕容器 -->
+                                <!-- App Store 下載連結 -->
+                                <a href="https://apps.apple.com/tw/app/%E8%8A%B8%E9%9B%80%E7%95%B0%E8%81%9E%E9%8C%84/id6605929369" target="_blank" class="cta-button app-store">
+                                    <!-- **重要**: 請將 src 指向你的 App Store 按鈕圖片 -->
+                                    <img src="images/app-store-badge.png" alt="Download on the App Store">
+                                </a>
+                                <!-- Google Play 下載連結 -->
+                                <a href="https://play.google.com/store/apps/details?id=air.tw.com.yunquegame.nameenergygame" target="_blank" class="cta-button google-play">
+                                     <!-- **重要**: 請將 src 指向你的 Google Play 按鈕圖片 -->
+                                     <img src="images/google-play-badge.png" alt="Get it on Google Play">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 遊戲選項 2: 易術姓名學之貴人神器 -->
+                        <div class="game-optionImg1">
+                            <h3>易術姓名學之貴人神器</h3> <!-- 遊戲名稱 -->
+                             <!-- 跳轉到詳細說明的連結 -->
+                            <a href="#guiren-details" class="details-link button">查看詳情</a>
+                            <div class="download-buttons"> <!-- 下載按鈕容器 -->
+                                <!-- Google Play 下載連結 (此遊戲目前只有 Google Play) -->
+                                <a href="https://play.google.com/store/apps/details?id=air.tw.com.maxddd23.luckynameenergy" target="_blank" class="cta-button google-play">
+                                    <!-- **重要**: 請將 src 指向你的 Google Play 按鈕圖片 -->
+                                    <img src="images/google-play-badge.png" alt="Get it on Google Play">
+                                </a>
+                                <!-- 若未來有 App Store 版本，可以取消註解下方區塊 -->
+                                <!--
+                                <a href="#" target="_blank" class="cta-button app-store disabled">
+                                    <img src="images/app-store-badge.png" alt="Download on the App Store (敬請期待)">
+                                </a>
+                                -->
+                            </div>
+                        </div>
+                    </div> <!-- .game-options 結束 -->
+                </div> <!-- .container 結束 -->
+            </section> <!-- #game-selection 結束 -->
+
+            <!-- ===== 芸雀異聞錄 詳細說明區塊 ===== -->
+            <section id="yiwenlu-details" class="features-section section-padding alt-bg">
+                <div class="container">
+                    <h2>《芸雀異聞錄》</h2> <!-- 區塊標題 -->
+                    <p class="section-intro">現實與虛擬相結合的遊戲，名字產生的能量轉化為卡牌力量，來幫仙雀們達成任務吧。</p> <!-- 引言 -->
+                    <div class="features-grid"> <!-- 特色列表網格 -->
+                        <!-- 特色項目 1 -->
+                        <div class="feature-item">
+                            <!-- 可在此處加入代表此特色的小圖示或截圖 -->
+                            <!-- <img src="images/yiwenlu-feature1.png" alt="姓名煉化圖示"> -->
+                            <h3>【好友姓名煉化】</h3>
+                            <p>將好友們的姓名煉化出含有等級的卡牌能量，存入天書後可以同步提升仙雀們的戰力，一款與現實世界關聯度高的遊戲。</p>
+                        </div>
+                        <!-- 特色項目 2 -->
+                        <div class="feature-item">
+                            <h3>【貴人能量】</h3>
+                            <p>煉化的過程以不同的鑽石變化來表現出能量的強度，並分析出卡牌的等級。</p>
+                        </div>
+                        <!-- 特色項目 3 -->
+                        <div class="feature-item">
+                            <h3>【貴人天書】</h3>
+                            <p>存入高等級的卡牌能量，可以提升仙雀們的戰力且解鎖任務和不同的功能。</p>
+                        </div>
+                        <!-- 特色項目 4 -->
+                        <div class="feature-item">
+                            <h3>【姻緣能量】</h3>
+                            <p>煉化的過程以不同的愛心變化來表現出能量的強度，並分析出卡牌的等級。</p>
+                        </div>
+                         <!-- 特色項目 5 -->
+                        <div class="feature-item">
+                            <h3>【姻緣天書】</h3>
+                            <p>存入高等級的卡牌能量，可以提升仙雀們的戰力且解鎖任務和不同的功能。</p>
+                        </div>
+                         <!-- 特色項目 6 -->
+                        <div class="feature-item">
+                            <h3>【適性任務】</h3>
+                            <p>提供互動式遊戲操作並解說適性的原因，解鎖該適性功能。</p>
+                        </div>
+                    </div> <!-- .features-grid 結束 -->
+                    <div class="core-gameplay"> <!-- 核心玩法說明區塊 -->
+                        <h3>核心玩法</h3>
+                        <p>收集朋友們的姓名創造出能量卡牌並存入天書，讓仙雀們有足夠的戰力完成她們的任務，並且能同時了解姓名學的奧妙之處！</p>
+                    </div>
+                    <div class="download-buttons">
+						<a href="#game-selection" class="back-to-selection button">Top</a>
+					</div>
+                </div> <!-- .container 結束 -->
+            </section> <!-- #yiwenlu-details 結束 -->
+
+            <!-- ===== 易術姓名學之貴人神器 詳細說明區塊 ===== -->
+            <section id="guiren-details" class="features-section section-padding alt-bg"> <!-- alt-bg 用於區分背景色 -->
+                 <div class="container">
+                    <h2>《易術姓名學之貴人神器》</h2> <!-- 區塊標題 -->
+                    <p class="section-intro">貴人能量乃是先天優勢，人際關係則是後天經營。易術姓名學乃是以易經的學說來計算出姓名的能量，再從彼此姓名的能量場中找尋出能對您有所幫助的貴人。</p> <!-- 引言 -->
+                    <div class="features-grid"> <!-- 特色列表網格 -->
+                        <!-- 特色項目 1 -->
+                        <div class="feature-item">
+                             <!-- 可在此處加入代表此特色的小圖示或截圖 -->
+                             <!-- <img src="images/guiren-feature1.png" alt="能量場圖示"> -->
+                            <h3>【易經姓名學原理】</h3>
+                            <p>以姓名學原理來推算出人與人之間的能量場並以鑽石等級來區分強度。</p>
+                        </div>
+                         <!-- 特色項目 2 -->
+                        <div class="feature-item">
+                            <h3>【貴人檢測能量】</h3>
+                            <p>功能以鑽石變化的表演方式展示對方對你貴人能量。</p>
+                        </div>
+                         <!-- 特色項目 3 -->
+                        <div class="feature-item">
+                            <h3>【我的貴人天書】</h3>
+                            <p>能將自己的貴人數據紀錄【我的貴人天書】，隨時查看。</p>
+                        </div>
+                    </div> <!-- .features-grid 結束 -->
+					 <div class="core-gameplay"> <!-- 核心玩法說明區塊 -->
+                        <h3>簡單易用</h3>
+                        <p>簡單易用，讓你投資對的朋友，不再為交友煩惱。</p>
+                    </div>
+                     <!-- 返回遊戲選擇區的按鈕 (可選) -->
+					<div class="download-buttons">
+						<a href="#game-selection" class="back-to-selection button">Top</a>
+					</div>
+                 </div> <!-- .container 結束 -->
+            </section> <!-- #guiren-details 結束 -->
+
+            <!-- ===== 關於我們區塊 ===== -->
+            <section id="about" class="about-section section-padding">
+                <div class="container">
+                    <h2>關於芸雀工房</h2> <!-- 區塊標題 -->
+                    <p>我們是一對熱愛遊戲與命理文化的夫妻獨立開發者，致力於創造獨特且有趣的遊戲體驗。</p> <!-- 簡介 -->
+                    <p>聯繫我們：<a href="mailto:yunyunservice168@gmail.com">yunyunservice168@gmail.com</a></p> <!-- 電子郵件連結 -->
+                    <div class="social-links"> <!-- 社群連結容器 -->
+                        <a href="https://www.youtube.com/@fortune-teller888" target="_blank" class="social-link youtube">
+                            <!-- 可選: 放入 YouTube 圖標 -->
+                            <!-- <img src="images/youtube-icon.png" alt="YouTube"> -->
+                            YouTube 頻道
+                        </a>
+                    </div>
+                </div> <!-- .container 結束 -->
+            </section> <!-- #about 結束 -->
+
+            <!-- ===== 相關連結區塊 ===== -->
+            <section id="links" class="links-section section-padding alt-bg">
+                <div class="container">
+                    <h2>相關連結</h2> <!-- 區塊標題 -->
+                    <a href="https://store.line.me/stickershop/author/4773774/zh-Hant" target="_blank" class="cta-button line-sticker">
+                        <!-- 可選: 放入 Line 圖標 -->
+                        <!-- <img src="images/line-icon.png" alt="Line"> -->
+                        Line 貼圖
+                    </a>
+                </div> <!-- .container 結束 -->
+            </section> <!-- #links 結束 -->
+
+        </main> <!-- main 結束 -->
+
+        <footer> <!-- 頁尾區塊 -->
+            <div class="container">
+                <!-- 版權宣告，年份會由 JavaScript 動態填入 -->
+                <p>&copy; <span id="current-year"></span> 芸雀工房. All rights reserved.</p>
+                <p>聯繫郵箱：<a href="mailto:yunyunservice168@gmail.com">yunyunservice168@gmail.com</a></p>
+                 <div class="footer-links"> <!-- 頁尾連結 -->
+                   <a href="#game-selection">遊戲選擇</a> | <!-- 內部連結 -->
+                   <a href="https://www.youtube.com/@fortune-teller888" target="_blank">YouTube</a> | <!-- 外部連結 -->
+                   <a href="https://store.line.me/stickershop/author/4773774/zh-Hant" target="_blank">Line 貼圖</a> <!-- 外部連結 -->
+                </div>
+            </div>
+        </footer> <!-- footer 結束 -->
+
+    </div> <!-- #main-content 結束 -->
+
+    <!-- ===== JavaScript 檔案連結 ===== -->
+    <!-- 將 JavaScript 放在 body 結尾前，確保 HTML 元素都載入後才執行 -->
+    <script src="script.js"></script>
+</body>
+</html>
