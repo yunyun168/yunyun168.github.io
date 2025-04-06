@@ -471,7 +471,7 @@ footer p {
 
 /* 小型螢幕 (平板、大型手機) */
 @media (max-width: 768px) {
-    html { font-size: 12px; } /* 稍微縮小基準字體 */
+    html { font-size: 15px; } /* 稍微縮小基準字體 */
     header .container {
         flex-direction: column; /* 頁首內容垂直排列 */
         text-align: center; /* 文字置中 */
@@ -483,7 +483,7 @@ footer p {
         justify-content: center; /* 導覽項目置中 */
     }
      header nav ul li {
-        margin: 0 10px; /* 調整導覽項目間距 */
+        margin: 0 5px; /* 調整導覽項目間距 */
     }
     .game-options {
         flex-direction: column; /* 遊戲選項垂直排列 */
@@ -511,7 +511,7 @@ footer p {
 @media (max-width: 576px) {
     html { font-size: 14px; } /* 進一步縮小基準字體 */
     header nav ul li {
-        margin: 0 8px; /* 再縮小導覽項目間距 */
+        margin: 0 3px; /* 再縮小導覽項目間距 */
     }
     .cta-button img {
          height: 45px; /* 商店按鈕再縮小一點 */
