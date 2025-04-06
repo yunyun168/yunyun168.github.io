@@ -1,0 +1,521 @@
+/* ===== 基本重設與全域樣式 ===== */
+* { /* 選取所有元素 */
+    margin: 0; /* 清除預設外邊距 */
+    padding: 0; /* 清除預設內邊距 */
+    box-sizing: border-box; /* 盒模型計算方式: 包含 padding 和 border */
+}
+
+html {
+    scroll-behavior: smooth; /* 啟用頁面內錨點連結的平滑滾動效果 */
+    font-size: 16px; /* 設定根元素的基準字體大小 */
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, 'Microsoft JhengHei', '微軟正黑體', sans-serif; /* 設定預設字體，優先使用系統常見字體 */
+    line-height: 1.7; /* 設定行高，增加易讀性 */
+    color: #333; /* 設定預設文字顏色 (深灰色) */
+    background-color: #f8f9fa; /* 設定頁面背景色 (非常淺的灰色) */
+    overflow: hidden; /* 初始隱藏滾動條，防止 splash screen 出現時能滾動下方內容 */
+}
+
+.container {
+    width: 90%; /* 容器寬度為父元素的 90% */
+    max-width: 1140px; /* 容器最大寬度 */
+    margin-left: auto; /* 自動左邊距 */
+    margin-right: auto; /* 自動右邊距，實現水平置中 */
+    padding-left: 15px; /* 容器左右內邊距 */
+    padding-right: 15px;
+}
+
+img {
+    max-width: 100%; /* 確保圖片不會超出其容器 */
+    height: auto; /* 維持圖片的原始寬高比 */
+    display: block; /* 避免圖片下方出現不明空隙 */
+}
+
+a { /* 設定連結樣式 */
+    color: #5a4a8a; /* 連結顏色 (紫色系) */
+    text-decoration: none; /* 移除連結底線 */
+    transition: color 0.3s ease; /* 顏色變化時的平滑過渡效果 */
+}
+
+a:hover { /* 滑鼠懸停在連結上時的樣式 */
+    color: #3c305d; /* 懸停時顏色加深 */
+    text-decoration: none; /* 保持無底線 */
+}
+
+h1, h2, h3 { /* 設定標題樣式 */
+    line-height: 1.3; /* 標題行高 */
+    color: #444; /* 標題顏色 */
+    margin-bottom: 0.75em; /* 標題下方外邊距 */
+}
+
+h1 { font-size: 2.5rem; } /* 主標題字體大小 */
+h2 { font-size: 2rem; text-align: center;} /* 區塊標題字體大小、置中 */
+h3 { font-size: 1.5rem; color: #5a4a8a;} /* 次級標題字體大小、顏色 */
+
+p { /* 設定段落樣式 */
+    margin-bottom: 1rem; /* 段落下外邊距 */
+    color: #555; /* 段落文字顏色 (稍淺的灰色) */
+	text-align: center;/* 段落文字置中 */
+}
+
+.section-padding { /* 通用區塊上下內邊距 */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.alt-bg { /* 交替區塊背景色 */
+    background-color: #ffffff; /* 白色背景 */
+}
+
+/* ===== 初始全畫面 Logo (Splash Screen) ===== */
+#splash-screen {
+    position: fixed; /* 固定定位，相對於瀏覽器視窗 */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 寬度等於視窗寬度 */
+    height: 100vh; /* 高度等於視窗高度 */
+    background-color: #000000; /* 背景色 (黑色) */
+    display: flex; /* 使用 Flexbox 佈局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    z-index: 9999; /* 設定堆疊順序，確保在最上層 */
+    cursor: pointer; /* 滑鼠樣式改為手指，提示可點擊 */
+    opacity: 1; /* 初始完全不透明 */
+    visibility: visible; /* 初始可見 */
+    transition: opacity 0.8s ease-out, visibility 0s linear 0.8s; /* 設定淡出動畫效果 (透明度變化 0.8 秒，可見性在 0.8 秒後立即改變) */
+}
+
+#splash-screen img {
+    max-width: 100%; /* Logo 最大寬度限制 */
+    max-height: 100vh; /* Logo 最大高度限制 */
+    object-fit: contain; /* 確保 Logo 完整顯示且不變形 */
+}
+
+/* 用於隱藏 Splash Screen 的 CSS Class */
+#splash-screen.hidden {
+    opacity: 0; /* 完全透明 */
+    visibility: hidden; /* 隱藏 */
+    pointer-events: none; /* 隱藏後不再攔截滑鼠事件 */
+    transition: opacity 0.8s ease-out, visibility 0s linear 0.8s; /* 淡出動畫 */
+}
+
+/* ===== 主要網站內容容器 ===== */
+#main-content {
+   /* 不需要特別樣式，主要用於包裹 Splash Screen 以外的內容 */
+}
+
+/* ===== 頁首 Header ===== */
+header {
+    background-color: #fff; /* 頁首背景色 (白色) */
+    padding: 10px 0; /* 頁首上下內邊距 */
+    border-bottom: 1px solid #e9ecef; /* 頁首下方邊框 */
+    position: sticky; /* 黏性定位，滾動時會固定在頂部 */
+    top: 0; /* 固定在頂部 */
+    z-index: 1000; /* 設定堆疊順序，確保在內容之上 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 微小的陰影效果 */
+}
+
+header .container {
+    display: flex; /* 使用 Flexbox 佈局 */
+    justify-content: space-between; /* 子元素左右對齊 */
+    align-items: center; /* 子元素垂直居中 */
+}
+
+header h1 {
+    color: #5a4a8a; /* 網站標題顏色 */
+    font-size: 1.8rem; /* 網站標題大小 */
+    margin-bottom: 0; /* 清除標題預設下邊距 */
+}
+
+header nav ul {
+    list-style: none; /* 清除列表樣式 (小圓點) */
+    display: flex; /* 使用 Flexbox 佈局 */
+    margin: 0; /* 清除列表預設邊距 */
+    padding: 0; /* 清除列表預設內邊距 */
+}
+
+header nav ul li {
+    margin-left: 25px; /* 導覽項目之間的左邊距 */
+}
+
+header nav ul li a {
+    text-decoration: none; /* 移除連結底線 */
+    color: #555; /* 導覽連結顏色 */
+    font-weight: 600; /* 字體加粗 */
+    font-size: 0.95rem; /* 字體大小 */
+    transition: color 0.3s ease; /* 顏色變化過渡效果 */
+}
+
+header nav ul li a:hover,
+header nav ul li a.active { /* 滑鼠懸停或當前活動頁面的導覽連結 */
+    color: #5a4a8a; /* 改變顏色 */
+}
+
+/* ===== 通用按鈕樣式 ===== */
+.button {
+    display: inline-block; /* 允許設定寬高和邊距 */
+    padding: 10px 20px; /* 按鈕內邊距 */
+    background-color: #5a4a8a; /* 背景色 (紫色系) */
+    color: #fff; /* 文字顏色 (白色) */
+    border: none; /* 無邊框 */
+    border-radius: 5px; /* 圓角 */
+    font-weight: 600; /* 字體加粗 */
+    text-align: center; /* 文字置中 */
+    cursor: pointer; /* 滑鼠樣式 */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 背景色和變形效果的過渡 */
+    margin: 5px; /* 按鈕周圍外邊距 */
+}
+
+.button:hover {
+    background-color: #4a3a7a; /* 滑鼠懸停時加深背景色 */
+    color: #fff; /* 保持文字白色 */
+    transform: translateY(-2px); /* 輕微向上移動 */
+}
+
+/* 查看詳情按鈕的特定樣式 */
+.details-link {
+    background-color: #6c757d; /* 背景色 (灰色) */
+    margin-bottom: 15px; /* 與下方下載按鈕的間距 */
+}
+.details-link:hover {
+    background-color: #5a6268; /* 滑鼠懸停時加深背景色 */
+}
+
+/* 返回選擇按鈕的特定樣式 */
+.back-to-selection {
+     background-color: #ffffff; /* 背景色 (黃色) */
+     color: #000; /* 文字顏色 (白) */
+     margin-top: 30px; /* 與上方內容的間距 */
+}
+.back-to-selection:hover {
+     /*background-color: #e0a800;  滑鼠懸停時加深背景色 */
+     color: #fff; /* 文字顏色 (黑) */
+}
+
+
+/* ===== 遊戲選擇區塊 ===== */
+.game-selection-section {
+    background-color: #e8e4f2;/*  區塊背景色 (淡紫色) */
+}
+
+.game-options {
+    display: flex; /* 使用 Flexbox 佈局 */
+    justify-content: space-around; /* 子元素平均分佈空間 */
+    align-items: stretch; /* 子元素在交叉軸上拉伸以等高 */
+    flex-wrap: wrap; /* 在空間不足時允許換行 */
+    gap: 30px; /* 子元素之間的間隙 */
+    margin-top: 30px; /* 與上方標題的間距 */
+}
+
+.game-option {
+    background-color: #fff;/*  遊戲選項背景色 (白色) */
+    padding: 30px 25px; /* 內邊距 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* 陰影效果 */
+    flex-basis: calc(50% - 30px); /* 理想基礎寬度 (50% 減去部分間隙) */
+    min-width: 290px; /* 最小寬度，防止過度壓縮 */
+    display: flex; /* 使用 Flexbox 佈局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素水平居中 */
+    text-align: center; /* 文字置中 */
+}
+
+.game-optionImg0{
+	padding: 30px 25px; /* 內邊距 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* 陰影效果 */
+    flex-basis: calc(50% - 30px); /* 理想基礎寬度 (50% 減去部分間隙) */
+    min-width: 290px; /* 最小寬度，防止過度壓縮 */
+    display: flex; /* 使用 Flexbox 佈局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素水平居中 */
+    text-align: center; /* 文字置中 */
+    background-image: url('images/Apps0.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff; /* 例如將文字改為白色 */
+}
+
+.game-optionImg1{
+	padding: 30px 25px; /* 內邊距 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* 陰影效果 */
+    flex-basis: calc(50% - 30px); /* 理想基礎寬度 (50% 減去部分間隙) */
+    min-width: 290px; /* 最小寬度，防止過度壓縮 */
+    display: flex; /* 使用 Flexbox 佈局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素水平居中 */
+    text-align: center; /* 文字置中 */
+    background-image: url('images/Apps1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff; /* 例如將文字改為白色 */
+}
+
+.game-option h3 {
+    margin-bottom: 15px; /* 遊戲標題下方間距 */
+}
+
+.download-buttons {
+    margin-top: auto; /* 將下載按鈕推到底部 (當 details-link 存在時) */
+    padding-top: 15px; /* 與上方內容的間距 */
+    display: flex; /* 使用 Flexbox 佈局 */
+    flex-wrap: wrap; /* 允許換行 */
+    justify-content: center; /* 水平居中 */
+    gap: 10px; /* 按鈕之間的間隙 */
+}
+
+.cta-button { /* 行動呼籲按鈕 (主要指商店按鈕) */
+    display: inline-block; /* 行內塊元素 */
+    padding: 0; /* 清除內邊距，讓圖片控制尺寸 */
+    border: none; /* 無邊框 */
+    background: none; /* 無背景 */
+    cursor: pointer; /* 滑鼠樣式 */
+    transition: transform 0.2s ease; /* 變形過渡效果 */
+    line-height: 0; /* 清除圖片按鈕可能產生的額外行高 */
+}
+
+.cta-button:hover {
+    transform: scale(1.05); /* 滑鼠懸停時輕微放大 */
+}
+
+.cta-button img {
+     height: 50px; /* 設定商店按鈕圖片高度 */
+     width: auto; /* 寬度自動 */
+     display: block; /* 確保圖片正確顯示 */
+}
+
+/* Line 貼圖按鈕特殊樣式 */
+.line-sticker {
+    background-color: #00c300; /* Line 綠色 */
+    color: white; /* 文字白色 */
+    padding: 28px 40px; /* 添加內邊距 (因為這是文字按鈕) */
+    border-radius: 5px; /* 圓角 */
+    font-weight: 600; /* 字體加粗 */
+    display: inline-block; /* 設為行內塊 */
+	font-size: 1.5rem; /* 字體大小 */
+}
+.line-sticker:hover {
+    background-color: #00a000; /* 滑鼠懸停時加深綠色 */
+    color: white;
+    transform: translateY(-2px); /* 輕微上移 */
+}
+
+
+/* ===== 特色說明區塊 ===== */
+.features-section .section-intro {
+    max-width: 700px; /* 引言文字最大寬度 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; /* 與下方網格的間距 */
+}
+
+.features-grid {
+    display: grid; /* 使用 Grid 佈局 */
+    /* 自動適應欄數，每欄最小 280px，最大 1fr (平均分配剩餘空間) */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* 網格間隙 */
+    text-align: left; /* 網格項目內文字靠左 */
+}
+
+.feature-item {
+    background-color: #f8f9fa; /* 特色項目背景色 (如果父層是白色) */
+    padding: 25px; /* 內邊距 */
+    border-radius: 8px; /* 圓角 */
+    /* border: 1px solid #e9ecef; */ /* 可選：添加細邊框 */
+}
+/* 如果父層是 .alt-bg (白色)，則讓項目背景稍有區別 */
+.alt-bg .feature-item {
+     background-color: #f1f3f5;
+}
+
+
+.feature-item h3 {
+    font-size: 1.3rem; /* 特色標題大小 */
+    margin-bottom: 10px; /* 下方間距 */
+}
+
+.feature-item p {
+    font-size: 0.95rem; /* 特色描述文字大小 */
+    color: #555; /* 文字顏色 */
+    margin-bottom: 0; /* 清除段落下邊距 */
+}
+
+.core-gameplay {
+    margin-top: 40px; /* 與上方網格的間距 */
+    padding: 25px; /* 內邊距 */
+    background-color: #e8e4f2; /* 背景色 (淡紫色) */
+    border-radius: 8px; /* 圓角 */
+    text-align: center; /* 內部文字置中 */
+}
+.core-gameplay h3 {
+     font-size: 1.4rem; /* 核心玩法標題大小 */
+     color: #4a3a7a; /* 顏色 */
+     margin-bottom: 10px; /* 下方間距 */
+}
+.core-gameplay p {
+     font-size: 1rem; /* 描述文字大小 */
+     color: #333; /* 文字顏色 */
+     max-width: 600px; /* 限制最大寬度 */
+     margin: 0 auto; /* 水平置中 */
+}
+
+/* ===== 關於我們區塊 ===== */
+.about-section {
+    text-align: center; /* 內容置中 */
+}
+
+.about-section p {
+    max-width: 600px; /* 限制文字寬度 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-links {
+    margin-top: 20px; /* 與上方文字的間距 */
+}
+
+.social-link {
+    display: inline-block; /* 行內塊 */
+    margin: 0 10px; /* 左右外邊距 */
+    padding: 8px 15px; /* 內邊距 */
+    border-radius: 5px; /* 圓角 */
+    text-decoration: none; /* 無底線 */
+    color: white; /* 文字白色 */
+    font-weight: 600; /* 字體加粗 */
+    transition: opacity 0.3s ease, transform 0.2s ease; /* 過渡效果 */
+}
+
+.social-link.youtube {
+    background-color: #FF0000; /* YouTube 紅色 */
+	font-size: 1.5rem; /* 字體大小 */
+}
+
+.social-link:hover {
+    opacity: 0.85; /* 滑鼠懸停時降低透明度 */
+    transform: translateY(-2px); /* 輕微上移 */
+}
+
+/* ===== 相關連結區塊 ===== */
+.links-section {
+    text-align: center; /* 內容置中 */
+}
+
+
+/* ===== 頁尾 Footer ===== */
+footer {
+    background-color: #343a40; /* 頁尾背景色 (深灰色) */
+    color: #adb5bd; /* 頁尾文字顏色 (淺灰色) */
+    text-align: center; /* 文字置中 */
+    padding: 40px 0; /* 上下內邊距 */
+    font-size: 0.9rem; /* 字體大小 */
+    margin-top: 40px; /* 與上方內容的間距 */
+}
+
+footer .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+footer a {
+    color: #ced4da; /* 頁尾連結顏色 */
+    text-decoration: none; /* 無底線 */
+}
+
+footer a:hover {
+    color: #fff; /* 滑鼠懸停時變白色 */
+    text-decoration: underline; /* 添加底線 */
+}
+
+footer p {
+    margin-bottom: 10px; /* 段落下邊距 */
+    color: #adb5bd; /* 確保文字顏色 */
+}
+
+.footer-links {
+    margin-top: 15px; /* 與上方版權文字的間距 */
+}
+.footer-links a {
+    margin: 0 10px; /* 連結左右外邊距 */
+}
+
+/* ===== 響應式設計 (針對不同螢幕尺寸調整樣式) ===== */
+
+/* 中等螢幕 (平板) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px; /* 調整容器最大寬度 */
+    }
+    .game-option {
+        flex-basis: calc(50% - 20px); /* 調整基礎寬度 */
+        gap: 20px; /* 調整間隙 */
+    }
+     h1 { font-size: 2.2rem; }
+     h2 { font-size: 1.8rem; }
+     h3 { font-size: 1.4rem; }
+}
+
+/* 小型螢幕 (平板、大型手機) */
+@media (max-width: 768px) {
+    html { font-size: 15px; } /* 稍微縮小基準字體 */
+    header .container {
+        flex-direction: column; /* 頁首內容垂直排列 */
+        text-align: center; /* 文字置中 */
+    }
+    header nav {
+        margin-top: 10px; /* 導覽列與標題的間距 */
+    }
+     header nav ul {
+        justify-content: center; /* 導覽項目置中 */
+    }
+     header nav ul li {
+        margin: 0 10px; /* 調整導覽項目間距 */
+    }
+    .game-options {
+        flex-direction: column; /* 遊戲選項垂直排列 */
+        align-items: center; /* 在交叉軸上居中 */
+        gap: 25px; /* 調整垂直間隙 */
+    }
+    .game-option {
+        flex-basis: 100%; /* 每個選項佔滿一行 */
+        width: 90%; /* 設定一個寬度 */
+        max-width: 450px; /* 最大寬度 */
+    }
+    .features-grid {
+        grid-template-columns: 1fr; /* 特色網格變為單欄 */
+    }
+     .section-padding { /* 減少區塊上下邊距 */
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+     h1 { font-size: 2rem; }
+     h2 { font-size: 1.6rem; }
+     h3 { font-size: 1.3rem; }
+}
+
+/* 超小型螢幕 (手機) */
+@media (max-width: 576px) {
+    html { font-size: 14px; } /* 進一步縮小基準字體 */
+    header nav ul li {
+        margin: 0 8px; /* 再縮小導覽項目間距 */
+    }
+    .cta-button img {
+         height: 45px; /* 商店按鈕再縮小一點 */
+     }
+    .button { /* 調整通用按鈕大小 */
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    .line-sticker { /* 調整 Line 按鈕大小 */
+         padding: 10px 20px;
+    }
+     .feature-item { /* 減少特色項目內邊距 */
+        padding: 20px;
+     }
+     footer { font-size: 0.85rem; } /* 頁尾字體再小一點 */
+}
