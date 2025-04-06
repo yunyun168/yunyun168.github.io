@@ -391,6 +391,11 @@ header nav ul li a.active { /* 滑鼠懸停或當前活動頁面的導覽連結 
     transition: opacity 0.3s ease, transform 0.2s ease; /* 過渡效果 */
 }
 
+.social-link.facebook {
+    background-color: #1877f2; /* facebook 藍色 */
+	font-size: 1.5rem; /* 字體大小 */
+}
+
 .social-link.youtube {
     background-color: #FF0000; /* YouTube 紅色 */
 	font-size: 1.5rem; /* 字體大小 */
