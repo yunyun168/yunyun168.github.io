@@ -343,8 +343,6 @@ header nav ul li a.active { /* 滑鼠懸停或當前活動頁面的導覽連結 
 .core-gameplay p {
      font-size: 1rem; /* 描述文字大小 */
      color: #333; /* 文字顏色 */
-     max-width: 600px; /* 限制最大寬度 */
-     margin: 0 auto; /* 水平置中 */
 }
 
 /* ===== 關於我們區塊 ===== */
