@@ -289,23 +289,6 @@ header nav ul li a.active { /* 滑鼠懸停或當前活動頁面的導覽連結 
      display: block; /* 確保圖片正確顯示 */
 }
 
-/* Line 貼圖按鈕特殊樣式 */
-.line-sticker {
-    background-color: #00c300; /* Line 綠色 */
-    color: white; /* 文字白色 */
-    padding: 28px 40px; /* 添加內邊距 (因為這是文字按鈕) */
-    border-radius: 5px; /* 圓角 */
-    font-weight: 600; /* 字體加粗 */
-    display: inline-block; /* 設為行內塊 */
-	font-size: 1.5rem; /* 字體大小 */
-}
-.line-sticker:hover {
-    background-color: #00a000; /* 滑鼠懸停時加深綠色 */
-    color: white;
-    transform: translateY(-2px); /* 輕微上移 */
-}
-
-
 /* ===== 特色說明區塊 ===== */
 .features-section .section-intro {
     max-width: 700px; /* 引言文字最大寬度 */
@@ -397,6 +380,11 @@ header nav ul li a.active { /* 滑鼠懸停或當前活動頁面的導覽連結 
 
 .social-link.youtube {
     background-color: #FF0000; /* YouTube 紅色 */
+	font-size: 1.5rem; /* 字體大小 */
+}
+
+.social-link.line {
+    background-color: #00c300; /* Line 綠色 */
 	font-size: 1.5rem; /* 字體大小 */
 }
 
@@ -514,9 +502,6 @@ footer p {
     .button { /* 調整通用按鈕大小 */
         padding: 8px 16px;
         font-size: 0.9rem;
-    }
-    .line-sticker { /* 調整 Line 按鈕大小 */
-         padding: 10px 20px;
     }
      .feature-item { /* 減少特色項目內邊距 */
         padding: 20px;
