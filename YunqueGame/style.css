@@ -359,7 +359,7 @@ header nav ul li a.active { /* 滑鼠懸停或當前活動頁面的導覽連結 
 }
 
 .social-links {
-    margin-top: 20px; /* 與上方文字的間距 */
+    margin-top: 40px; /* 與上方文字的間距 */
 }
 
 .social-link {
