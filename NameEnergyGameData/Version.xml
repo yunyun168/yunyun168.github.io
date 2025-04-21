@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <data>
 <!--版本對應-->	
-	<Version0  id="APPLE版本對應">2.0.0</Version0>
-	<Version1  id="GOOGLE版本對應">2.0.0</Version1>
+	<Version0  id="APPLE版本對應">2.1.0</Version0>
+	<Version1  id="GOOGLE版本對應">2.1.0</Version1>
 	<Version2  id="未使用版本對應">1.3.0</Version2>
 	<Version3  id="未使用版本對應">1.3.0</Version3>
 	<Version4  id="未使用版本對應">1.2.0</Version4>
