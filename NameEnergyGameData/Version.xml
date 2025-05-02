@@ -25,4 +25,8 @@
 	<LockUI2  id="附屬遊戲1">0</LockUI2>
 	<LockUI3  id="附屬遊戲1訊息">【仙雀派對】遊戲功能發生異常，目前暫時無法開放，請等待新版本更新。</LockUI3>	
 	
+<!--Resource-->	
+	<Resource0  id="資源包版本">https://yunyun168.github.io/NameEnergyGameData/Resource/</Resource0>
+	<Resource1  id="資源包網址">GameSound.zip_1</Resource1>
+	
 </data>
