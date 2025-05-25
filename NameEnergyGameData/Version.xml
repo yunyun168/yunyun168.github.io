@@ -29,5 +29,6 @@
 	
 <!--Resource-->	
 	<Resource0  id="聲音資源包">GameSound.zip_1</Resource0>
+	<Resource1  id="角色資源包">RoleAction.zip_1</Resource1>
 	
 </data>
