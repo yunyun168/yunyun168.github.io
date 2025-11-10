@@ -28,7 +28,7 @@
 	<LockUI3  id="附屬遊戲1訊息">【仙雀派對】遊戲功能發生異常，目前暫時無法開放，請等待新版本更新。</LockUI3>	
 	
 <!--Resource-->	
-	<Resource0  id="聲音資源包">GameSound.zip_1</Resource0>
+	<Resource0  id="聲音資源包">GameSound.zip_2</Resource0>
 	<Resource1  id="角色資源包">RoleAction.zip_2</Resource1>
 	
 </data>
