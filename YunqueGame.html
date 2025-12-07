@@ -1,21 +1,48 @@
-<script language="javascript">
-	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) 
-	{
-		window.location.href = 'https://apps.apple.com/tw/app/%E8%8A%B8%E9%9B%80%E7%95%B0%E8%81%9E%E9%8C%84/id6605929369';
-		
-		self.close();
-	} 
-	else if (/(Android)/i.test(navigator.userAgent)) 
-	{
-		window.location.href = 'https://play.google.com/store/apps/details?id=air.tw.com.yunquegame.nameenergygame';
-		
-		self.close();
-	} 
-	else 
-	{
-		window.open('https://apps.apple.com/tw/app/%E8%8A%B8%E9%9B%80%E7%95%B0%E8%81%9E%E9%8C%84/id6605929369');
-		window.open('https://play.google.com/store/apps/details?id=air.tw.com.yunquegame.nameenergygame');
-		
-		window.close();
-	}
-</script>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在轉跳至下載頁面...</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 20px; line-height: 1.6; }
+        .btn { display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+    </style>
+    <script type="text/javascript">
+        function redirect() {
+            var url = '';
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // 判斷 iOS
+            if (/(iPhone|iPad|iPod|iOS)/i.test(userAgent)) {
+                url = 'https://apps.apple.com/tw/app/%E8%8A%B8%E9%9B%80%E7%95%B0%E8%81%9E%E9%8C%84/id6605929369';
+            } 
+            // 判斷 Android
+            else if (/(Android)/i.test(userAgent)) {
+                url = 'https://play.google.com/store/apps/details?id=air.tw.com.yunquegame.nameenergygame';
+            } 
+            // 其他裝置 (PC)
+            else {
+                // PC 通常不建議自動開兩個視窗，會被擋，這裡僅示範跳轉其中一個或顯示連結
+                url = 'https://apps.apple.com/tw/app/%E8%8A%B8%E9%9B%80%E7%95%B0%E8%81%9E%E9%8C%84/id6605929369'; 
+            }
+
+            if(url) {
+                // 使用 replace 取代 href，這樣使用者按「上一頁」不會又跳回來
+                window.location.replace(url);
+                
+                // 設定備用連結，以防 JS 轉址失效
+                document.getElementById('manual-link').href = url;
+            }
+        }
+
+        // 頁面載入後執行
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <h3>正在前往應用程式商店...</h3>
+    <p>如果沒有自動轉址，請點擊下方按鈕：</p>
+    <a id="manual-link" href="#" class="btn">前往下載</a>
+</body>
+</html>
