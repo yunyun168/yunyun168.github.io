@@ -7,7 +7,7 @@
 	<Version3  id="未使用版本對應">1.3.0</Version3>
 	<Version4  id="未使用版本對應">1.2.0</Version4>
 	<Version5  id="字庫版本對應">2026_5_18_0_47_48</Version5>
-	<Version6  id="資源版本對應">12</Version6>	<!--要放https://github.com/yunyun168/yunyun168.github.io/releases/-->	
+	<Version6  id="資源版本對應">9</Version6>	<!--要放https://github.com/yunyun168/yunyun168.github.io/releases/-->	
 
 <!--URL-->	
 	<URL0  id="字庫表網址">https://yunyun168.github.io/AppCommonData/TextStrokeTable.txt</URL0>
@@ -19,7 +19,7 @@
 	<URL6  id="Google工具網址">https://play.google.com/store/apps/details?id=air.tw.com.maxddd23.luckynameenergy</URL6>
 	<URL7  id="LINE貼圖">https://store.line.me/stickershop/author/4773774/zh-Hant</URL7>
 	<URL8  id="FB粉絲團">https://www.facebook.com/people/%E8%8A%B8%E9%9B%80%E5%B7%A5%E6%88%BF/61560479685553/</URL8>
-	<URL9  id="最新資源包網址">https://pub-1ef82d0e52474be9bd06cebac4925c8e.r2.dev/NameEnergyGame/Resource/</URL9>
+	<URL9  id="資源包網址">https://yunyun168.github.io/NameEnergyGameData/Resource/</URL9>
 	<URL10 id="新資源包網址">https://github.com/yunyun168/yunyun168.github.io/releases/download/NameEnergyGameV</URL10>
 	<URL11 id="雙平台轉址網址">https://yunyun168.github.io/YunqueGame.html</URL11>
 	<URL12 id="Thread網址">https://www.threads.com/@yunque168</URL12>
@@ -32,6 +32,6 @@
 	
 <!--Resource-->	
 	<Resource0  id="聲音資源包">GameSound.zip_4</Resource0>
-	<Resource1  id="角色資源包">RoleAction.zip_12</Resource1>
+	<Resource1  id="角色資源包">RoleAction.zip_9</Resource1>
 	
 </data>
